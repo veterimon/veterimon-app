@@ -1,0 +1,7 @@
+{
+  "name": "veterimon-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
