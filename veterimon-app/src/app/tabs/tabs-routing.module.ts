@@ -8,31 +8,31 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'noticia',
+        loadChildren: () => import('../noticias/noticia.module').then(m => m.NoticiaPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'consulta',
+        loadChildren: () => import('../consultas/consulta.module').then(m => m.ConsultaPageModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'mapa',
+        loadChildren: () => import('../mapas/mapa.module').then(m => m.MapaPageModule)
       },
       {
-        path: 'tab4',
-        loadChildren: () => import('../tab4/tab4.module').then(m => m.Tab4PageModule)
+        path: 'perfil',
+        loadChildren: () => import('../perfils/perfil.module').then(m => m.PerfilPageModule)
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/noticia',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/noticia',
     pathMatch: 'full'
   }
 ];
