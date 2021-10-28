@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ModalComponent } from '../componentes/modal/modal.component';
 
 @Component({
   selector: 'app-noticia',
@@ -7,6 +9,7 @@ import { Component } from '@angular/core';
 })
 export class NoticiaPage {
 
-  constructor() {}
+  constructor(public modalController: ModalController) {}
 
-}
+  }
+
