@@ -1,0 +1,26 @@
+ion-card {
+    overflow: hidden;
+    position: relative;
+    padding-top: 70px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+
+    .img-wrapper {
+        position: absolute;
+        left: 50%;
+        top: -5%;
+        transform: translateX(-50%);
+        img {
+            border-radius: 10px;
+            width: 90px;
+            height: 90px;
+            margin: 1px;
+        }
+
+        ion-icon {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
