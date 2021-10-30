@@ -5,28 +5,23 @@
 </ion-header>
 
 <ion-content>
-  <form [formGroup]="fGroup">
-    <ion-item style="border: 1px solid black; margin-top: 5px;">
-        <ion-label position="floating"> Nome </ion-label>
-        <ion-input type="text"  formControlName="name"></ion-input>
-    </ion-item>
-
-    <ion-item style="border: 1px solid black; margin-top: 5px;">
-        <ion-label position="floating"> E-mail </ion-label>
-        <ion-input type="email" formControlName="email"></ion-input>
-    </ion-item>
-
-    <ion-item style="border: 1px solid black; margin-top: 5px;">
-        <ion-label position="floating"> Senha </ion-label>
-        <ion-input type="password" formControlName="password"></ion-input>
-    </ion-item>
-
-    <ion-item style="border: 1px solid black; margin-top: 5px; height: 150px;">
-      <ion-textarea 
-        [(ngMode)]="user.description" 
-        style="height: 150px;" placeholder="Digite a descrição aqui..."
-      ></ion-textarea>
-    </ion-item>
+    <ion-content>
+        <form [formGroup]="fGroup">
+          <ion-item style="border: 1px solid black; margin-top: 5px;">
+              <ion-label position="floating"> Nome </ion-label>
+              <ion-input type="text"  formControlName="name"></ion-input>
+          </ion-item>
+      
+          <ion-item style="border: 1px solid black; margin-top: 5px;">
+              <ion-label position="floating"> E-mail </ion-label>
+              <ion-input type="email" formControlName="email"></ion-input>
+          </ion-item>
+      
+          <ion-item style="border: 1px solid black; margin-top: 5px; height: 150px;">
+            <ion-textarea 
+              style="height: 150px;" placeholder="Digite a descrição aqui..."
+            ></ion-textarea>
+          </ion-item>
 </form>
 
 </ion-content>
