@@ -10,9 +10,8 @@ import { AlertController, ModalController } from '@ionic/angular';
 export class ModalComponent implements OnInit {
 
   public user = {
-    name: 'Leo',
-    email: 'leo@',
-    password: '12313',
+    name: '',
+    email: '',
     description: ''
   };
 
@@ -21,8 +20,7 @@ export class ModalComponent implements OnInit {
   constructor(public modal: ModalController, private fBuilder: FormBuilder) {
     this.fGroup = this.fBuilder.group({
       'name': [this.user.name],
-      'email': [this.user.email],
-      'password': [this.user.password]
+      'email': [this.user.email]
     });
 
   }
