@@ -10,24 +10,26 @@ import { AlertController, ModalController } from '@ionic/angular';
 export class ModalComponent implements OnInit {
 
   public user = {
-    name: 'Carlos',
-    email: 'carlos@gmail.com',
-    password: '12345678',
+    name: 'Leo',
+    email: 'leo@',
+    password: '12313',
     description: ''
   };
 
   public fGroup: FormGroup;
 
-  public alertController: AlertController;
-
-
   constructor(public modal: ModalController, private fBuilder: FormBuilder) {
+    this.fGroup = this.fBuilder.group({
+      'name': [this.user.name],
+      'email': [this.user.email],
+      'password': [this.user.password]
+    });
 
   }
   ngOnInit() {}
   
   submitForm() {
-    console.log('Submit!');
+    console.log(this.fGroup.value)
   }
   
   fecharModal() {
