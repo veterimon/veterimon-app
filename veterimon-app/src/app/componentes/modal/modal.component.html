@@ -1,5 +1,3 @@
-<input type="teste" style="max-width: 200px;">
-
 <ion-header> 
     <ion-toolbar>
         <ion-title> Agendar nova consulta </ion-title>
@@ -7,30 +5,42 @@
 </ion-header>
 
 <ion-content>
-<form>
-    <ion-item>
+  <form [formGroup]="fGroup">
+    <ion-item style="border: 1px solid black; margin-top: 5px;">
         <ion-label position="floating"> Nome </ion-label>
-        <!--<ion-input type="text" [{ ngModel }]="user.name"></ion-input> -->
+        <ion-input type="text"  formControlName="name"></ion-input>
     </ion-item>
 
-    <ion-item>
+    <ion-item style="border: 1px solid black; margin-top: 5px;">
         <ion-label position="floating"> E-mail </ion-label>
-        <!--<ion-input type="email" [{ ngModel }]="user.email"></ion-input>-->
+        <ion-input type="email" formControlName="email"></ion-input>
     </ion-item>
 
-    <ion-item>
+    <ion-item style="border: 1px solid black; margin-top: 5px;">
         <ion-label position="floating"> Senha </ion-label>
-        <!--<ion-input type="password" [{ ngModel }]="user.password"></ion-input>-->
+        <ion-input type="password" formControlName="password"></ion-input>
     </ion-item>
 
-    <ion-item>
-        <ion-label position="floating"> Descrição </ion-label>
-        <!--<ion-input type="text" [{ ngModel }]="user.description"></ion-input>-->
+    <ion-item style="border: 1px solid black; margin-top: 5px; height: 150px;">
+      <ion-textarea 
+        [(ngMode)]="user.description" 
+        style="height: 150px;" placeholder="Digite a descrição aqui..."
+      ></ion-textarea>
     </ion-item>
 </form>
 
 </ion-content>
 
-<ion-button (click)="fecharModal()">Fechar</ion-button>
+<ion-footer>
+    <ion-toolbar>
+        <ion-button (click)="submitForm()" expand="full">
+            Enviar
+        </ion-button>
+        <ion-button (click)="fecharModal()" expand="full">
+            Fechar
+        </ion-button>
+    </ion-toolbar>
+</ion-footer>
+
 
  
