@@ -1,9 +1,45 @@
-<ion-header>
+<ion-content [fullscreen]="true">
   <ion-toolbar>
-    <ion-title>trabalhe-conosco</ion-title>
+    <ion-title>Trabalhe Conosco</ion-title>
   </ion-toolbar>
-</ion-header>
 
-<ion-content>
+  <ion-content>
+    <ion-card-content>
+      <form>
+        <ion-item>
+          <ion-label position="floating">Nome completo</ion-label>
+          <ion-input type="name" required></ion-input>
+        </ion-item>
 
-</ion-content>
+        <ion-item>
+          <ion-label position="floating">Idade</ion-label>
+          <ion-input type="number" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Cidade</ion-label>
+          <ion-input type="name" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">E-mail</ion-label>
+          <ion-input type="email" required></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label position="floating">Função</ion-label>
+          <ion-input type="name" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Observações</ion-label>
+          <ion-input type="text" required></ion-input>
+          <ion-textarea rows="3" cols="4" placeholder=""></ion-textarea>
+        </ion-item>
+  
+
+        <ion-button type="submit" color="danger" expand="block">Enviar</ion-button>
+
+      </form>
+    </ion-card-content>
+  </ion-content>
