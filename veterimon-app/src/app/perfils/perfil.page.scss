@@ -1,4 +1,4 @@
-ion-card {
+/* ion-card {
     overflow: hidden;
     position: relative;
     padding-top: 70px;
@@ -6,6 +6,7 @@ ion-card {
     height: auto;
     margin: auto;
 
+   
     .img-wrapper {
         position: absolute;
         left: 50%;
@@ -24,3 +25,45 @@ ion-card {
         }
     }
 }
+ */
+
+ ion-card {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  ion-label {
+    margin: 0;
+  }
+
+.card {
+    overflow: hidden;
+    position: relative;
+    padding-top: 0px;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    float:none;
+}
+.texto {
+    display: inline-block;
+    text-align: left;
+    margin:auto;
+}
+ 
+ .img-wrapper {
+    height: 40%;
+    width: 40%;
+    object-fit: cover;
+    float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border: transparent thin solid;
+    padding: 5px;
+    margin: 0px 10px 10px 0;
+    max-width: 186px;
+    }
+ 
+
