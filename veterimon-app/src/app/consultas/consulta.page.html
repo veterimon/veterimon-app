@@ -10,7 +10,8 @@
 
       <ion-card>
         <ion-card-content>
-          <ion-button (click)="chamarModal()" expand="block" fill="outline">Agendar nova consulta</ion-button>
+          <!-- <ion-button (click)="chamarModal()" expand="block" fill="outline">Agendar nova consulta</ion-button> -->
+          <ion-button routerLink="/agendar-consulta" expand="block" fill="outline">Agendar nova consulta</ion-button>
           <br>
           <div style="display: flex;" class="ion-justify-content-center">
             <ion-text color="dark">
@@ -22,7 +23,7 @@
 
       <ion-card>
         <ion-card-content>
-          <ion-button expand="block" fill="outline">Histórico de consultas</ion-button>
+          <ion-button routerLink="/historico-consultas" expand="block" fill="outline">Histórico de consultas</ion-button>
           <br>
           <div style="display: flex;" class="ion-justify-content-center">
             <ion-text color="dark">
