@@ -29,6 +29,10 @@ const routes: Routes = [
         loadChildren: () => import('../fale-conosco/fale-conosco.module').then(m => m.FaleConoscoPageModule)
       },
 
+      {
+        path: 'trabalhe-conosco',
+        loadChildren: () => import('../trabalhe-conosco/trabalhe-conosco.module').then(m => m.TrabalheConoscoPageModule)
+      },
 
       {
         path: '',
