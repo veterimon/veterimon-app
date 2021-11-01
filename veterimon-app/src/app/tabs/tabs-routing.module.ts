@@ -23,6 +23,13 @@ const routes: Routes = [
         path: 'perfil',
         loadChildren: () => import('../perfils/perfil.module').then(m => m.PerfilPageModule)
       },
+
+      {
+        path: 'fale-conosco',
+        loadChildren: () => import('../fale-conosco/fale-conosco.module').then(m => m.FaleConoscoPageModule)
+      },
+
+
       {
         path: '',
         redirectTo: '/tabs/noticia',
