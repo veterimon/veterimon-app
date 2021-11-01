@@ -8,6 +8,9 @@ import { AgendarConsultaPageRoutingModule } from './agendar-consulta-routing.mod
 
 import { AgendarConsultaPage } from './agendar-consulta.page';
 
+//importando o componente do Formulário
+import { FormularioComponent } from '../formulario/formulario.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +18,6 @@ import { AgendarConsultaPage } from './agendar-consulta.page';
     IonicModule,
     AgendarConsultaPageRoutingModule
   ],
-  declarations: [AgendarConsultaPage]
+  declarations: [AgendarConsultaPage, FormularioComponent]
 })
 export class AgendarConsultaPageModule {}
