@@ -9,6 +9,18 @@ const routes: Routes = [
   {
     path: 'tab4',
     loadChildren: () => import('./perfils/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
+    path: 'agendar-consulta',
+    loadChildren: () => import('./agendar-consulta/agendar-consulta.module').then( m => m.AgendarConsultaPageModule)
+  },
+  {
+    path: 'historico-consultas',
+    loadChildren: () => import('./historico-consultas/historico-consultas.module').then( m => m.HistoricoConsultasPageModule)
+  },
+  {
+    path: 'editar-consulta',
+    loadChildren: () => import('./editar-consulta/editar-consulta.module').then( m => m.EditarConsultaPageModule)
   }
 
 ];

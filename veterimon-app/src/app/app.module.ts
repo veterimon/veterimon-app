@@ -9,10 +9,9 @@ import { ModalComponent } from './componentes/modal/modal.component';
 
 // -- importar firebase + enviornment
 import { environment } from '../environments/environment';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFireAuthModule } from '@angular/fire/auth';
-import { AngularFireStorageModule } from '@angular/fire/storage';
-import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 
 @NgModule({
   declarations: [
@@ -28,7 +27,6 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
     ReactiveFormsModule,
     // -- firebase 
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireAuthModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule
   ],
