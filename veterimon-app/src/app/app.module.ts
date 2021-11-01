@@ -7,6 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ModalComponent } from './componentes/modal/modal.component';
 
+// -- importar firebase + enviornment
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +25,12 @@ import { ModalComponent } from './componentes/modal/modal.component';
     IonicModule.forRoot(), 
     AppRoutingModule, 
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // -- firebase 
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    AngularFireStorageModule,
+    AngularFireDatabaseModule
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
