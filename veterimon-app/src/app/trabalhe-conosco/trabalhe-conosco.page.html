@@ -5,7 +5,7 @@
 
   <ion-content>
     <ion-card-content>
-      <form>
+      <form #form="ngForm" (ngSubmit)="(form)">
         <ion-item>
           <ion-label position="floating">Nome completo</ion-label>
           <ion-input type="name" required></ion-input>
@@ -38,7 +38,7 @@
         </ion-item>
   
 
-        <ion-button type="submit" color="danger" expand="block">Enviar</ion-button>
+        <ion-button type="submit"  (click)="presentAlert()" color="danger" type="submit" [disabled]="form.invalid" expand="block">Enviar</ion-button>
 
       </form>
     </ion-card-content>
