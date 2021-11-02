@@ -6,6 +6,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ModalComponent } from './componentes/modal/modal.component';
+import { IonicStorageModule } from '@ionic/storage-angular';
+import { Drivers } from '@ionic/storage';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,10 @@ import { ModalComponent } from './componentes/modal/modal.component';
     IonicModule.forRoot(), 
     AppRoutingModule, 
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    IonicStorageModule.forRoot({
+      driverOrder: [Drivers.IndexedDB, Drivers.LocalStorage]
+    })
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
