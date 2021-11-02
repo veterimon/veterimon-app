@@ -35,6 +35,11 @@ const routes: Routes = [
       },
 
       {
+        path: 'home',
+        loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
+      },
+
+      {
         path: '',
         redirectTo: '/tabs/noticia',
         pathMatch: 'full'
@@ -43,7 +48,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/noticia',
+    redirectTo: '/tabs/home',
     pathMatch: 'full'
   }
 ];
