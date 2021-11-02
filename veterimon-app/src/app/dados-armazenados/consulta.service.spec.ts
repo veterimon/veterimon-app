@@ -1,16 +1,23 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ConsultaService } from './consulta.service';
+import { ConsultaInternaService } from '../dados-armazenados/consulta.service';
 
-describe('ConsultaService', () => {
-  let service: ConsultaService;
+describe('ConsultaInternaService', () => 
+  {
+    // ATRIBUTOS
+    let service: ConsultaInternaService;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(ConsultaService);
-  });
-
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-});
+    // MÉTODOS
+    beforeEach(() => 
+      {
+        TestBed.configureTestingModule({});
+        service = TestBed.inject(ConsultaInternaService);
+      }
+    );
+    it('should be created', () => 
+      {
+        expect(service).toBeTruthy();
+      }
+    );
+  }
+);
