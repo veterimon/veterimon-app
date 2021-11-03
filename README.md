@@ -1,11 +1,5 @@
 ## Veterimon
 
-<p align="center">
- <b>Tabela de conteúdo</b>
- <br>
- <a href="requisitos">Requisitos</a> • <a href="instalação">Instalação</a> • <a href="tecnologia">Tecnologias</a> • <a href="autores">Autores</a> • <a href="licença">Licença</a>
-</p>
-
 ### 🏁 Requisitos
 
 * [VSCode](https://code.visualstudio.com/).
@@ -63,6 +57,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Patrícia de Lima Carlos](https://github.com/d-llirium)
 
 
-## Licença
+### Licença
 
 [MIT](https://choosealicense.com/licenses/mit/)
