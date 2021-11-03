@@ -54,12 +54,12 @@
     <ion-item>
       <ion-label position="floating">Confirmar Senha</ion-label>
       <ion-input type="password" formControlName="confirmaSenha"></ion-input>
-      <ng-container *ngFor="let erro of mensagens.confirmaSenha">
-        <span class="msg-erro"
-          *ngIf="formCadastro.get('confirmaSenha').hasError(erro.tipo) && (formCadastro.get('confirmaSenha').dirty || formCadastro.get('confirmaSenha').touched)">
-            {{ erro.mensagem }}
-        </span>
-      </ng-container>
+        <ng-container *ngFor="let erro of mensagens.confirmaSenha">
+          <span class="msg-erro"
+            *ngIf="formCadastro.get('confirmaSenha').hasError(erro.tipo) && (formCadastro.get('confirmaSenha').dirty || formCadastro.get('confirmaSenha').touched)">
+              {{ erro.mensagem }}
+          </span>
+        </ng-container>
     </ion-item>
 
     <ion-button expand="block" (click)="salvarCadastro()">Salvar</ion-button>

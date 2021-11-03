@@ -16,8 +16,6 @@ export class CadastroPage implements OnInit {
   formCadastro: FormGroup;
   usuario: Usuario = new Usuario();
 
-  
-
   mensagens = {
     nome: [
       { tipo: 'required', mensagem: 'O campo Nome é obrigatório.' },
@@ -51,8 +49,8 @@ export class CadastroPage implements OnInit {
       nome: ['', Validators.compose([Validators.required, Validators.minLength(3)])],
       cpf: ['', Validators.compose([Validators.required, CpfValidator.cpfValido])],
       email: ['', Validators.compose([Validators.required, Validators.email])],
-      senha: ['',  Validators.compose([Validators.required, Validators.minLength(8), Validators.maxLength(13)])],
-      confirmaSenha: ['', Validators.compose([Validators.required, Validators.minLength(8), Validators.maxLength(13)])]
+      senha: ['',  Validators.compose([Validators.required, Validators.minLength(6), Validators.maxLength(8)])],
+      confirmaSenha: ['', Validators.compose([Validators.required, Validators.minLength(6), Validators.maxLength(8)])]
     }, {
       validator: comparaValidator('senha', 'confirmaSenha')
     })
