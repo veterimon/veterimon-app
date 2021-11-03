@@ -7,6 +7,9 @@
 * [Google Chrome](https://www.google.com/chrome/) ou [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/)
 
 **Instalação**
+
+Instale pelo terminal o app veterimon-app com npm.
+
 ```bash
 $ npm install --save-dev @angular/cli@latest
 
