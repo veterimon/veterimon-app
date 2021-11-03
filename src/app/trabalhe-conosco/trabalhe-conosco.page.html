@@ -1,0 +1,73 @@
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <ion-title>Fale Conosco</ion-title>
+  </ion-toolbar>
+
+  <ion-content>
+    <form [formGroup]="formtrabalheConosco">
+      <ion-item>
+        <ion-label position="floating">Nome</ion-label>
+        <ion-input formControlName="nome"></ion-input>
+        <ng-container *ngFor="let erro of mensagens.nome">
+          <span class="msg-erro"
+            *ngIf="formtrabalheConosco.get('nome').hasError(erro.tipo) && (formtrabalheConosco.get('nome').dirty || formtrabalheConosco.get('nome').touched)">
+              {{ erro.mensagem }}
+          </span>
+        </ng-container>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input formControlName="email"></ion-input>
+        <ng-container *ngFor="let erro of mensagens.email">
+          <span class="msg-erro"
+            *ngIf="formtrabalheConosco.get('email').hasError(erro.tipo) && (formtrabalheConosco.get('email').dirty || formtrabalheConosco.get('email').touched)">
+              {{ erro.mensagem }}
+          </span>
+        </ng-container>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Objetivo</ion-label>
+        <ion-input formControlName="objetivo"></ion-input>
+        <ng-container *ngFor="let erro of mensagens.objetivo">
+          <span class="msg-erro"
+            *ngIf="formtrabalheConosco.get('objetivo').hasError(erro.tipo) && (formtrabalheConosco.get('objetivo').dirty || formtrabalheConosco.get('objetivo').touched)">
+              {{ erro.mensagem }}
+          </span>
+        </ng-container>
+      </ion-item>
+
+      <ion-list lines="full">
+        <ion-item>
+          <ion-label>Dúvida</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Sugestão</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Reclamação</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+      </ion-list>
+      
+      <ion-button expand="block" (click)="salvar()">Salvar</ion-button>
+    </form>
+
+  </ion-content>
+
+
+  <ion-card>
+    <ion-card-content>
+      <ion-text color="dark">
+        <h2 style="text-align: center">Redes Sociais</h2>
+      </ion-text>
+      <div style="display: flex;" class="ion-justify-content-center">
+        <ion-icon name="logo-instagram" class="instagram"> </ion-icon>
+        <ion-icon name="logo-facebook" class="facebook"> </ion-icon>
+        <ion-icon name="logo-twitter" class="twitter"> </ion-icon>
+      </div>
+    </ion-card-content>
+  </ion-card>
