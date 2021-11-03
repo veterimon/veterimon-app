@@ -33,10 +33,13 @@ const routes: Routes = [
         path: 'trabalhe-conosco',
         loadChildren: () => import('../trabalhe-conosco/trabalhe-conosco.module').then(m => m.TrabalheConoscoPageModule)
       },
-
       {
         path: 'home',
         loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
+      },
+      {
+        path: 'login',
+        loadChildren: () => import('../login/login.module').then(m => m.LoginPageModule)
       },
 
       {
@@ -48,7 +51,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/home',
+    redirectTo: '/tabs/login',
     pathMatch: 'full'
   }
 ];

@@ -60,7 +60,7 @@ export class CadastroPage implements OnInit {
   }
 
   voltarPage(): void {
-    this.router.navigate(['tabs/home'])
+    this.router.navigate(['tabs/login'])
   }
 
   async salvarCadastro() {
