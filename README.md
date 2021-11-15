@@ -30,6 +30,8 @@ npm install @angular-devkit/core --save-dev
 npm install @angular/storage
 
 npm install @ionic/storage-angular
+
+npm install firebase
 ```
 
 Entre no servidor.
