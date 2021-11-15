@@ -1,13 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <div class="form">
 
-<ion-router-outlet id="menu"></ion-router-outlet>
-  <ion-content>
-    <ion-grid>
-        <img src ="/assets/logo/logo3.png">
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input [(ngModel)]='email'></ion-input>
+    </ion-item>
+    <br>
 
-        <ion-col align-self-center>
-          <ion-button routerLink="/cadastro" expand="block" color="primary">CADASTRE-SE</ion-button>
+    <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input [(ngModel)]='password'></ion-input>
+    </ion-item>
 
-          <ion-button routerLink="/tabs/noticia" expand="block" color="danger">ENTRE</ion-button>
-        </ion-col>
-    </ion-grid>
-  </ion-content>
+    <ion-button (click)='login()' expand='block'>Login</ion-button>
+    <br>
+
+    <h5 (click)='signup()'>Don't have account? <ion-text color='primary'>signup here</ion-text>
+    </h5>
+    
+  </div>
+</ion-content>

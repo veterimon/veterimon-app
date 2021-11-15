@@ -41,7 +41,6 @@ const routes: Routes = [
         path: 'login',
         loadChildren: () => import('../login/login.module').then(m => m.LoginPageModule)
       },
-
       {
         path: '',
         redirectTo: '/tabs/noticia',
@@ -51,7 +50,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/login',
+    redirectTo: '/login',
     pathMatch: 'full'
   }
 ];

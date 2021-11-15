@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { ModalComponent } from './componentes/modal/modal.component';
 import { IonicStorageModule } from '@ionic/storage-angular';
 import { Drivers } from '@ionic/storage';
+import { AngularFireModule} from '@angular/fire/compat'
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import { Drivers } from '@ionic/storage';
   ],
   entryComponents: [],
   imports: [
+    AngularFireModule.initializeApp(environment.firebase),
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule, 
