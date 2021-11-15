@@ -1,31 +1,43 @@
 import { Component, OnInit } from '@angular/core';
-import { AlertController } from '@ionic/angular';
+import { Router } from '@angular/router';
+import { FireserviceService } from '../fireservice.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
-export class LoginPage {
+export class LoginPage implements OnInit {
+  public email:any;
+  public password:any;
 
-  public alertController: AlertController;
+  constructor( public router:Router,
+    public fireService:FireserviceService) { }
 
+  ngOnInit() {
+  }
 
-  constructor(alert: AlertController) {
-    this.alertController = alert;
+  login(){
+    this.fireService.loginWithEmail({email:this.email,password:this.password}).then(res=>{
+      console.log(res);
+      if(res.user.uid){
+        this.fireService.getDetails({uid:res.user.uid}).subscribe(res=>{
+          console.log(res);
+          alert('Welcome '+ res['name']);
+          this.router.navigate(['/tabs'])
+        },err=>{
+          console.log(err, 'testeERRO');
+        });
+      }
+    },err=>{
+      alert(err.message)
+      console.log(err);
+    })
   }
 
 
-  async presentAlert(): Promise<void> {
-
-    const alerta = await this.alertController.create({
-      header: 'Login feito com sucesso!',
-
-      buttons: ['OK']
-    });
-
-
-    alerta.present();
+  signup(){
+    this.router.navigateByUrl('signup');
   }
-
 }
+
