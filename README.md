@@ -31,7 +31,7 @@ npm install @angular/storage
 
 npm install @ionic/storage-angular
 
-npm install firebase
+npm install firebase @angular/fire --save
 ```
 
 Entre no servidor.
