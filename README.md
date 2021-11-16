@@ -23,15 +23,10 @@ Vá para o diretório do projeto.
 Instale as dependências pelo terminal.
 
 ```bash
-npm install --save-dev @angular/cli@latest
 
-npm install @angular-devkit/core --save-dev
+npm install -g @ionic/cli
 
-npm install @angular/storage
-
-npm install @ionic/storage-angular
-
-npm install firebase @angular/fire --save
+npm install
 ```
 
 Entre no servidor.
