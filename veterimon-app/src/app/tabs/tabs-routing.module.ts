@@ -41,6 +41,11 @@ const routes: Routes = [
         path: 'login',
         loadChildren: () => import('../login/login.module').then(m => m.LoginPageModule)
       },
+
+      {
+        path: 'pokedex',
+        loadChildren: () => import('../pokedex/pokedex.module').then(m => m.PokedexPageModule)
+      },
       {
         path: '',
         redirectTo: '/tabs/noticia',
