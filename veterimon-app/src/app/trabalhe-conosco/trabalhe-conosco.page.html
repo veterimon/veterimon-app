@@ -1,6 +1,6 @@
 <ion-content [fullscreen]="true">
   <ion-toolbar>
-    <ion-title>Fale Conosco</ion-title>
+    <ion-title>Trabalhe Conosco</ion-title>
   </ion-toolbar>
 
 <ion-content>
@@ -16,27 +16,18 @@
           <ion-input type="email" required></ion-input>
         </ion-item>
 
+
+        <ion-item>
+          <ion-label position="floating">Função desejada</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+
         <ion-item>
           <ion-label position="floating">Escreva aqui sua mensagem</ion-label>
           <ion-input type="text" required></ion-input>
           <ion-textarea rows="4" cols="20" placeholder=""></ion-textarea>
         </ion-item>
   
-  
-        <ion-list lines="full">
-          <ion-item>
-            <ion-label>Dúvida</ion-label>
-            <ion-checkbox></ion-checkbox>
-          </ion-item>
-          <ion-item>
-            <ion-label>Sugestão</ion-label>
-            <ion-checkbox></ion-checkbox>
-          </ion-item>
-          <ion-item>
-            <ion-label>Reclamação</ion-label>
-            <ion-checkbox></ion-checkbox>
-          </ion-item>
-        </ion-list>
         <ion-button type="submit"  (click)="presentAlert()" color="danger" type="submit" [disabled]="form.invalid" expand="block">Enviar</ion-button>
       </form>
     </ion-card-content>
