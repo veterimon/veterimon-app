@@ -1,27 +1,56 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content class="ion-padding">
-  <div class="form">
+<ion-content>
+  <ion-grid class="grid1">
+    <ion-row class="row1">
+      <ion-col>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row2">
+      <ion-col>
+      </ion-col>
+    </ion-row>
 
-    <ion-item>
-      <ion-label position="stacked">Email</ion-label>
-      <ion-input [(ngModel)]='email'></ion-input>
-    </ion-item>
-    <br>
+  </ion-grid>
 
-    <ion-item>
-      <ion-label position="stacked">Password</ion-label>
-      <ion-input [(ngModel)]='password'></ion-input>
-    </ion-item>
+  <ion-slide>
+    <div class="contaier-login">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h1>Login</h1>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <ion-item>
+                <ion-label position="stacked">E-mail</ion-label>
+                <ion-input [(ngModel)]='email'></ion-input>
+              </ion-item>
+              <br>
 
-    <ion-button (click)='login()' expand='block'>Login</ion-button>
-    <br>
+              <ion-item>
+                <ion-label position="stacked">Senha</ion-label>
+                <ion-input [(ngModel)]='password'></ion-input>
+              </ion-item>
 
-    <h5 (click)='signup()'>Don't have account? <ion-text color='primary'>signup here</ion-text>
-    </h5>
-    
-  </div>
+              <ion-button (click)='login()' expand='block'>Entrar</ion-button>
+              <br>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-label>
+              <h5 (click)='signup()'>Não tem uma conta?
+                <ion-text color='primary'>Registre-se aqui</ion-text>
+              </h5>
+            </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-slide>
 </ion-content>
