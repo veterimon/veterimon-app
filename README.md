@@ -51,7 +51,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Livia Soares Ribeiro](https://github.com/LivsSR)
 - [Carlos Oliveira](https://github.com/CarlosDanielSantosOliveira)
 - [Leonardo Rodrigues](https://github.com/rodrigues-leo97)
-- [Patrícia de Lima Carlos](https://github.com/d-llirium)
+- [Marcello Simões](https://github.com/marcellossf)
 
 
 ### Licença
