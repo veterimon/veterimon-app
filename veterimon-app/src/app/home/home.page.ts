@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../models/Usuario';
-import { StorageService } from '../services/storage.service';
+// import { StorageService } from '../services/storage.service';
 
 @Component({
   selector: 'app-home',
@@ -8,10 +8,13 @@ import { StorageService } from '../services/storage.service';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
   listaUsuarios: Usuario[] = [];
 
-  constructor(private storageService: StorageService) { }
+  /* constructor(private storageService: StorageService) { }
 
   async buscarUsuarios() {
     this.listaUsuarios = await this.storageService.getAll();
@@ -27,6 +30,6 @@ export class HomePage implements OnInit {
   async exluirCadastro(email: string) {
     await this.storageService.remove(email);
     this.buscarUsuarios();
-  }
+  } */
 
 }

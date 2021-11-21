@@ -1,0 +1,51 @@
+<div class="content">
+
+  <ion-list inset>
+
+    <ion-item id="rounded">
+      <ion-label color="dark">Nome</ion-label>
+      <ion-input [(ngModel)]="nome" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item id="rounded">
+      <ion-label>Especie</ion-label>
+      <ion-input [(ngModel)]="especie" type="string"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Especialidade</ion-label>
+      <ion-select [(ngModel)]="especialidade">
+        <ion-select-option value="Clinica Geral">Clinica Geral</ion-select-option>
+        <ion-select-option value="Dermatologia">Dermatologia</ion-select-option>
+        <ion-select-option value="Cardiologia">Cardiologia</ion-select-option>
+        <ion-select-option value="Endocrinologia">Endocrinologia</ion-select-option>
+        <ion-select-option value="Neurocirurgia">Neurocirurgia</ion-select-option>
+        <ion-select-option value="Ortopedista">Ortopedista</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Data</ion-label>
+      <ion-datetime [(ngModel)]="data" displayFormat='DD/MM/YYYY'></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Horario</ion-label>
+      <ion-datetime [(ngModel)]="horario" displayFormat="HH:mm"></ion-datetime>
+    </ion-item>
+
+  </ion-list>
+  <div></div>
+  <ion-label>Observações</ion-label>
+  <ion-item style="border: 1px solid black; margin-top: 5px; height: 140px;">
+    <ion-textarea [(ngModel)]="observacoes" style="height: 140px;" placeholder="Digite observações aqui...">
+    </ion-textarea>
+  </ion-item>
+
+
+
+
+  <ion-button color="success" (click)="inserir()">Agendar</ion-button>
+  <ion-button (click)="voltar()">voltar</ion-button>
+
+</div>

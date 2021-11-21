@@ -6,6 +6,12 @@ const routes: Routes = [
   {
     path: '',
     component: ConsultaPage,
+    children: [
+      {
+        path: 'consultas', //adicionar o caminho da pasta filha no arquivo routing.module da pasta mãe, e adicionar .. no import
+        loadChildren: () => import('../consultas/consulta.module').then( m => m.ConsultaPageModule)
+        }
+      ]
   }
 ];
 

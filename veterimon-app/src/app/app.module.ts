@@ -10,6 +10,8 @@ import { IonicStorageModule } from '@ionic/storage-angular';
 import { Drivers } from '@ionic/storage';
 import { AngularFireModule} from '@angular/fire/compat'
 import { environment } from 'src/environments/environment';
+import { ConsultaService } from './dados-armazenados/consulta.service';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,12 @@ import { environment } from 'src/environments/environment';
     AppRoutingModule, 
     FormsModule,
     ReactiveFormsModule,
+    IonicStorageModule.forRoot(),
     IonicStorageModule.forRoot({
       driverOrder: [Drivers.IndexedDB, Drivers.LocalStorage]
     })
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },  ConsultaService, DatePipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
