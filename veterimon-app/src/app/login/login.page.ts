@@ -23,10 +23,10 @@ export class LoginPage implements OnInit {
       if(res.user.uid){
         this.fireService.getDetails({uid:res.user.uid}).subscribe(res=>{
           console.log(res);
-          alert('Welcome '+ res['name']);
+          alert('Seja Bem-Vindo '+ res['name']);
           this.router.navigate(['/tabs'])
         },err=>{
-          console.log(err, 'testeERRO');
+          console.log(err);
         });
       }
     },err=>{
