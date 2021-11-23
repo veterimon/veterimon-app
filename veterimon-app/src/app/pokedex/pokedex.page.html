@@ -1,842 +1,1978 @@
 <ion-content [fullscreen]="true">
   <ion-toolbar>
-    <ion-title>Pokédex</ion-title>
+    <ion-title>Veterimon</ion-title>
   </ion-toolbar>
 
-<ion-header class="ion-no-border">
-  <img src="" alt="">
-	<ion-toolbar>
-	</ion-toolbar>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');
+  </style>
 
-  <div class="titles">
-    <ion-card-subtitle>Procure o Pokémon por nome</ion-card-subtitle>
-    <ion-searchbar class="ion-no-padding ion-padding-top"></ion-searchbar>
-  </div>  
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+    </ion-toolbar>
 
-</ion-header>
+    <div class="titulo">
+      <h3>Procure aqui seu Pokémon!</h3>
+    </div>
 
-
-
-<ion-content fullscreen="true">
-
-  <div class="ion-padding">
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#001</ion-card-subtitle>
-            <ion-card-title>Bulbasaur</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="bug"></ion-icon>
-                Planta
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/001.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#002</ion-card-subtitle>
-            <ion-card-title>Ivysaur</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="bug"></ion-icon>
-               Planta
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/002.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#003</ion-card-subtitle>
-            <ion-card-title>Venusaur</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="bug"></ion-icon>
-               Planta
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/003.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#005</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/005.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#006</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/006.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#007</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/007.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#008</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/008.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#009</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/009.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#010</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/010.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#011</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/011.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#012</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/012.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#013</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/013.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#014</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/014.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#015</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/015.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#016</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/016.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#017</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/017.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#018</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/018.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#019</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/019.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#020</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/020.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#021</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/021.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#022</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/022.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#023</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/023.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#024</ion-card-subtitle>
-            <ion-card-title>Charmander</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="flame-outline"></ion-icon>
-               Fogo
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/024.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#025</ion-card-subtitle>
-            <ion-card-title>Pikachu</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="thunderstorm"></ion-icon>
-               Elétrico
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/025.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#026</ion-card-subtitle>
-            <ion-card-title>Raichu</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="thunderstorm"></ion-icon>
-               Elétrico
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/026.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#027</ion-card-subtitle>
-            <ion-card-title>Sandshrew</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="hammer"></ion-icon>
-                Veneno
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/027.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#028</ion-card-subtitle>
-            <ion-card-title>Sandslash</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="hammer"></ion-icon>
-                Terra
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/028.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#029</ion-card-subtitle>
-            <ion-card-title>Nidoran♀</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="cloud"></ion-icon>
-                Veneno
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/029.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-    
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#030</ion-card-subtitle>
-            <ion-card-title>Nidorina</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="cloud"></ion-icon>
-                Veneno
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/030.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#031</ion-card-subtitle>
-            <ion-card-title>Nidoqueen</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="cloud"></ion-icon>
-               Veneno
-               <ion-icon name="hammer"></ion-icon>
-               Terra
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/031.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
+  </ion-header>
 
 
 
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#032</ion-card-subtitle>
-            <ion-card-title>Nidoran♂</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="cloud"></ion-icon>
-               Veneno
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/032.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
+  <ion-content fullscreen="true">
 
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#033</ion-card-subtitle>
-            <ion-card-title>Nidorino</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="cloud"></ion-icon>
-               Veneno
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/033.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
+    <div class="ion-padding">
 
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#034</ion-card-subtitle>
-            <ion-card-title>Nidoking</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="cloud"></ion-icon>
-               Veneno
-               <ion-icon name="hammer"></ion-icon>
-               Terra
-              </ion-badge>
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#001</ion-card-subtitle>
+              <ion-card-title>Bulbasaur</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="bug"></ion-icon>
+                  Planta
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/001.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
 
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/034.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#002</ion-card-subtitle>
+              <ion-card-title>Ivysaur</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="bug"></ion-icon>
+                  Planta
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/002.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
 
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#035</ion-card-subtitle>
-            <ion-card-title>Clefairy</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="sparkles"></ion-icon>
-               Fada
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/035.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#003</ion-card-subtitle>
+              <ion-card-title>Venusaur</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="bug"></ion-icon>
+                  Planta
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/003.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
 
-    <ion-card color="">
-      <div class="mask">
-        <img src="assets/pokeball/pokeball.png" alt="">
-      </div>
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="8">
-            <ion-card-subtitle class="no">#036</ion-card-subtitle>
-            <ion-card-title>Clefable</ion-card-title>
-            <ion-card-subtitle>
-              <ion-badge>
-                <ion-icon name="sparkles"></ion-icon>
-               Fada
-              </ion-badge>
-            </ion-card-subtitle>
-          </ion-col>
-          <ion-col size="4">
-            <ion-img src="assets/pokemon/036.png"></ion-img>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#004</ion-card-subtitle>
+              <ion-card-title>Charmander</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="flame"></ion-icon>
+                  Fogo
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/004.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
 
-    
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#005</ion-card-subtitle>
+              <ion-card-title>Charmeleon</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="flame"></ion-icon>
+                  Fogo
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/005.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
 
-  </div>
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#006</ion-card-subtitle>
+              <ion-card-title>Charizard</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="flame"></ion-icon>
+                  Fogo
+                  <ion-icon name="airplane"></ion-icon>
+                  Voador
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/006.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
 
-</ion-content>
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#007</ion-card-subtitle>
+              <ion-card-title>Squirtle</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="rainy"></ion-icon>
+                  Água
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/007.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#008</ion-card-subtitle>
+              <ion-card-title>Wartortle</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="rainy"></ion-icon>
+                  Água
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/008.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#009</ion-card-subtitle>
+              <ion-card-title>Blastoise</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="rainy"></ion-icon>
+                  Água
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/009.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#010</ion-card-subtitle>
+              <ion-card-title>Caterpie</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="leaf"></ion-icon>
+                  Inseto
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/010.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#011</ion-card-subtitle>
+              <ion-card-title>Metapod</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="leaf"></ion-icon>
+                  Inseto
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/011.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#012</ion-card-subtitle>
+              <ion-card-title>Butterfree</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="leaf"></ion-icon>
+                  Inseto
+                  <ion-icon name="sad"></ion-icon>
+                  Voador
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/012.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#013</ion-card-subtitle>
+              <ion-card-title>Weedle</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="leaf"></ion-icon>
+                  Inseto
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/013.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#014</ion-card-subtitle>
+              <ion-card-title>Kakuna</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="leaf"></ion-icon>
+                  Inseto
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/014.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#015</ion-card-subtitle>
+              <ion-card-title>Beedrill</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="leaf"></ion-icon>
+                  Inseto
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/015.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#016</ion-card-subtitle>
+              <ion-card-title>Pidgey</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="walk"></ion-icon>
+                  Normal
+                  <ion-icon name="airplane"></ion-icon>
+                  Voador
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/016.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#017</ion-card-subtitle>
+              <ion-card-title>Pidgeotto</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="walk"></ion-icon>
+                  Normal
+                  <ion-icon name="airplane"></ion-icon>
+                  Voador
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/017.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#018</ion-card-subtitle>
+              <ion-card-title>Pidgeot</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="walk"></ion-icon>
+                  Normal
+                  <ion-icon name="airplane"></ion-icon>
+                  Voador
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/018.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#019</ion-card-subtitle>
+              <ion-card-title>Rattata</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="walk"></ion-icon>
+                  Normal
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/019.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#020</ion-card-subtitle>
+              <ion-card-title>Raticate</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="walk"></ion-icon>
+                  Normal
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/020.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#021</ion-card-subtitle>
+              <ion-card-title>Spearow</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="walk"></ion-icon>
+                  Normal
+                  <ion-icon name="airplane"></ion-icon>
+                  Voador
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/021.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#022</ion-card-subtitle>
+              <ion-card-title>Fearow</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="walk"></ion-icon>
+                  Normal
+                  <ion-icon name="airplane"></ion-icon>
+                  Voador
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/022.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#023</ion-card-subtitle>
+              <ion-card-title>Ekans</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/023.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#024</ion-card-subtitle>
+              <ion-card-title>Arbok</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/024.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#025</ion-card-subtitle>
+              <ion-card-title>Pikachu</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="thunderstorm"></ion-icon>
+                  Elétrico
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/025.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#026</ion-card-subtitle>
+              <ion-card-title>Raichu</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="thunderstorm"></ion-icon>
+                  Elétrico
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/026.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#027</ion-card-subtitle>
+              <ion-card-title>Sandshrew</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/027.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#028</ion-card-subtitle>
+              <ion-card-title>Sandslash</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="paw"></ion-icon>
+                  Terra
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/028.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#029</ion-card-subtitle>
+              <ion-card-title>Nidoran♀</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="cloud"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/029.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#030</ion-card-subtitle>
+              <ion-card-title>Nidorina</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="cloud"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/030.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#031</ion-card-subtitle>
+              <ion-card-title>Nidoqueen</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="cloud"></ion-icon>
+                  Veneno
+                  <ion-icon name="paw"></ion-icon>
+                  Terra
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/031.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#032</ion-card-subtitle>
+              <ion-card-title>Nidoran♂</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="cloud"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/032.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#033</ion-card-subtitle>
+              <ion-card-title>Nidorino</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="cloud"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/033.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#034</ion-card-subtitle>
+              <ion-card-title>Nidoking</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="cloud"></ion-icon>
+                  Veneno
+                  <ion-icon name="paw"></ion-icon>
+                  Terra
+                </ion-badge>
+
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/034.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#035</ion-card-subtitle>
+              <ion-card-title>Clefairy</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="sparkles"></ion-icon>
+                  Fada
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/035.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#036</ion-card-subtitle>
+              <ion-card-title>Clefable</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="sparkles"></ion-icon>
+                  Fada
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/036.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#037</ion-card-subtitle>
+              <ion-card-title>Clefable</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="sparkles"></ion-icon>
+                  Fada
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/037.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#038</ion-card-subtitle>
+              <ion-card-title>Clefable</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="sparkles"></ion-icon>
+                  Fada
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/038.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#039</ion-card-subtitle>
+              <ion-card-title>Clefable</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="sparkles"></ion-icon>
+                  Fada
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/039.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#040</ion-card-subtitle>
+              <ion-card-title>Clefable</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="sparkles"></ion-icon>
+                  Fada
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/040.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#041</ion-card-subtitle>
+              <ion-card-title>Zubat</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                  <ion-icon name="airplane"></ion-icon>
+                  Voador
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/041.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#042</ion-card-subtitle>
+              <ion-card-title>Golbat</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                  <ion-icon name="airplane"></ion-icon>
+                  Voador
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/042.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#043</ion-card-subtitle>
+              <ion-card-title>Oddish</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="bug"></ion-icon>
+                  Planta
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/043.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#044</ion-card-subtitle>
+              <ion-card-title>Gloom</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="bug"></ion-icon>
+                  Planta
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/044.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#045</ion-card-subtitle>
+              <ion-card-title>Vileplume</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="bug"></ion-icon>
+                  Planta
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/045.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#046</ion-card-subtitle>
+              <ion-card-title>Paras</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="leaf"></ion-icon>
+                  Inseto
+                  <ion-icon name="bug"></ion-icon>
+                  Planta
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/046.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#047</ion-card-subtitle>
+              <ion-card-title>Parasect</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="leaf"></ion-icon>
+                  Inseto
+                  <ion-icon name="bug"></ion-icon>
+                  Planta
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/047.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#048</ion-card-subtitle>
+              <ion-card-title>Venonat</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="leaf"></ion-icon>
+                  Inseto
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/048.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#049</ion-card-subtitle>
+              <ion-card-title>Venomoth</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="leaf"></ion-icon>
+                  Inseto
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/049.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#050</ion-card-subtitle>
+              <ion-card-title>Diglett</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="paw"></ion-icon>
+                  Terra
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/050.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#051</ion-card-subtitle>
+              <ion-card-title>Dugtrio</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="paw"></ion-icon>
+                  Terra
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/051.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#052</ion-card-subtitle>
+              <ion-card-title>Meowth</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="walk"></ion-icon>
+                  Normal
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/052.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#053</ion-card-subtitle>
+              <ion-card-title>Persian</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="walk"></ion-icon>
+                  Normal
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/053.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#054</ion-card-subtitle>
+              <ion-card-title>Psyduck</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="rainy"></ion-icon>
+                  Água
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/054.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#055</ion-card-subtitle>
+              <ion-card-title>Golduck</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="rainy"></ion-icon>
+                  Água
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/055.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#056</ion-card-subtitle>
+              <ion-card-title>Mankey</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="speedometer"></ion-icon>
+                  Lutador
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/056.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#057</ion-card-subtitle>
+              <ion-card-title>Primeape</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="speedometer"></ion-icon>
+                  Lutador
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/057.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#058</ion-card-subtitle>
+              <ion-card-title>Growlithe</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="flame"></ion-icon>
+                  Fogo
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/058.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#059</ion-card-subtitle>
+              <ion-card-title>Arcanine</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="flame"></ion-icon>
+                  Fogo
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/059.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#060</ion-card-subtitle>
+              <ion-card-title>Poliwag</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="rainy"></ion-icon>
+                  Água
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/060.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#061</ion-card-subtitle>
+              <ion-card-title>Poliwhirl</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="rainy"></ion-icon>
+                  Água
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/061.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#062</ion-card-subtitle>
+              <ion-card-title>Poliwrath</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="rainy"></ion-icon>
+                  Água
+                  <ion-icon name="speedometer"></ion-icon>
+                  Lutador
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/062.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#063</ion-card-subtitle>
+              <ion-card-title>Kadabra</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="footsteps"></ion-icon>
+                  Psíquico
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/063.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#064</ion-card-subtitle>
+              <ion-card-title>Kadabra</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="footsteps"></ion-icon>
+                  Psíquico
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/064.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#065</ion-card-subtitle>
+              <ion-card-title>Alakazam</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="footsteps"></ion-icon>
+                  Psíquico
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/065.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#066</ion-card-subtitle>
+              <ion-card-title>Machop</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="speedometer"></ion-icon>
+                  Lutador
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/066.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#067</ion-card-subtitle>
+              <ion-card-title>Machoke</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="speedometer"></ion-icon>
+                  Lutador
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/067.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#068</ion-card-subtitle>
+              <ion-card-title>Machamp</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="speedometer"></ion-icon>
+                  Lutador
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/068.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#069</ion-card-subtitle>
+              <ion-card-title>Bellsprout</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="bug"></ion-icon>
+                  Planta
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/069.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#070</ion-card-subtitle>
+              <ion-card-title>Weepinbell</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="bug"></ion-icon>
+                  Planta
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/070.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#071</ion-card-subtitle>
+              <ion-card-title>Victreebel</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="bug"></ion-icon>
+                  Planta
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/071.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#072</ion-card-subtitle>
+              <ion-card-title>Tentacool</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="bug"></ion-icon>
+                  Planta
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/072.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#073</ion-card-subtitle>
+              <ion-card-title>Tentacruel</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="bug"></ion-icon>
+                  Planta
+                  <ion-icon name="hammer"></ion-icon>
+                  Veneno
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/073.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#073</ion-card-subtitle>
+              <ion-card-title>Geodude</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="nuclear"></ion-icon>
+                  Pedra
+                  <ion-icon name="paw"></ion-icon>
+                  Terra
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/073.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#074</ion-card-subtitle>
+              <ion-card-title>Geodude</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="nuclear"></ion-icon>
+                  Pedra
+                  <ion-icon name="thunderstorm"></ion-icon>
+                  Elétrico
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/074.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#075</ion-card-subtitle>
+              <ion-card-title>Graveler</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="nuclear"></ion-icon>
+                  Pedra
+                  <ion-icon name="paw"></ion-icon>
+                  Terra
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/075.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#076</ion-card-subtitle>
+              <ion-card-title>Golem</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="nuclear"></ion-icon>
+                  Pedra
+                  <ion-icon name="paw"></ion-icon>
+                  Terra
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/076.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#077</ion-card-subtitle>
+              <ion-card-title>Ponyta</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="flame"></ion-icon>
+                  Fogo
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/077.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#078</ion-card-subtitle>
+              <ion-card-title>Rapidash</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="flame"></ion-icon>
+                  Fogo
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/078.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#079</ion-card-subtitle>
+              <ion-card-title>Slowpoke</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="rainy"></ion-icon>
+                  Água
+                  <ion-icon name="footsteps"></ion-icon>
+                  Psíquico
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/079.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="">
+        <div class="mask">
+          <img src="assets/pokeball/pokeball.png" alt="">
+        </div>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8">
+              <ion-card-subtitle class="no">#80</ion-card-subtitle>
+              <ion-card-title>Slowpoke</ion-card-title>
+              <ion-card-subtitle>
+                <ion-badge>
+                  <ion-icon name="rainy"></ion-icon>
+                  Água
+                  <ion-icon name="footsteps"></ion-icon>
+                  Psíquico
+                </ion-badge>
+              </ion-card-subtitle>
+            </ion-col>
+            <ion-col size="4">
+              <ion-img src="assets/pokemon/080.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+
+
+    </div>
+
+  </ion-content>

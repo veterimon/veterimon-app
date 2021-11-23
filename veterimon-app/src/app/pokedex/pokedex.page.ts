@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonInfiniteScroll } from '@ionic/angular';
+import { IonInfiniteScroll, IonSearchbar, PopoverController } from '@ionic/angular';
 
 @Component({
   selector: 'app-pokedex',
@@ -7,4 +7,7 @@ import { IonInfiniteScroll } from '@ionic/angular';
   styleUrls: ['./pokedex.page.scss'],
 })
 export class PokedexPage {
+  
+  
+  
 }
