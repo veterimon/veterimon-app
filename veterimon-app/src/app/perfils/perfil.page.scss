@@ -27,9 +27,16 @@
 }
  */
 
+ ion-title {
+    font-family: 'Lexend', sans-serif;
+  }  
+
+
  ion-card {
     margin-top: 5px;
     margin-bottom: 5px;
+    font-family: 'Lexend', sans-serif;
+
   }
   
   ion-label {
@@ -44,13 +51,19 @@
     height: auto;
     margin: auto;
     float:none;
+    font-family: 'Lexend', sans-serif;
 }
 .texto {
     display: inline-block;
     text-align: left;
     margin:auto;
 }
- 
+
+.ion-justify-content-center {
+    font-family: 'Lexend', sans-serif;
+}
+    
+
  .img-wrapper {
     height: 40%;
     width: 40%;
@@ -64,6 +77,8 @@
     padding: 5px;
     margin: 0px 10px 10px 0;
     max-width: 186px;
+
     }
  
+
 

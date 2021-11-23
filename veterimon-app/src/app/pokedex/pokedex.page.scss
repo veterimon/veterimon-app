@@ -1,3 +1,8 @@
+ion-title {
+  font-family: 'Lexend', sans-serif;
+}  
+
+
 ion-header {
     ion-toolbar {
       --background: rgba(0,0,0,0);
@@ -8,15 +13,16 @@ ion-header {
       font-size: 24px;
     }
  
-   .titles {
+   .titulo {
      padding: 0 2rem;
+     font-family: 'Lexend', sans-serif;
    }
  
-   ion-searchbar {
+/*    ion-searchbar {
      --background: rgba(0,0,0,.04);
      --box-shadow: none;
      --border-radius: 6px;
-   }
+   } */
  
    img {
      transform: scale(1.2, 1.2);
