@@ -1,0 +1,6 @@
+{
+	"appId": "com.VET",
+	"appName": "Veterimon",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

@@ -6,6 +6,7 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    
   }
   
   #container strong {
@@ -16,12 +17,25 @@
   #container p {
     font-size: 16px;
     line-height: 22px;
-  
     color: #8c8c8c;
-  
     margin: 0;
   }
   
   #container a {
     text-decoration: none;
   }
+
+  ion-button {
+    width: 100%;
+    font-family: 'Lexend', sans-serif;
+}
+
+
+ .content {
+  font-family: 'Lexend', sans-serif;
+  font-size: 20px;
+}
+
+ion-label {
+  padding: 5px;
+}
