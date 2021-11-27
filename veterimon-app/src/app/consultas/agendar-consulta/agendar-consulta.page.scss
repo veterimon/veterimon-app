@@ -1,9 +1,14 @@
+ion-title {
+    font-family: 'Lexend', sans-serif;
+}
+
 .content{
     text-align: left;
-
+    font-family: 'Lexend', sans-serif;
     position: absolute;
     left: 0;
     right: 0;
     top: 35%;
     transform: translateY(-50%);
+    
 }
