@@ -10,6 +10,7 @@ import { IonicStorageModule } from '@ionic/storage-angular';
 import { Drivers } from '@ionic/storage';
 import { AngularFireModule} from '@angular/fire/compat'
 import { environment } from 'src/environments/environment';
+import { DadosConsultaService } from './services/dados-consulta.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { environment } from 'src/environments/environment';
       driverOrder: [Drivers.IndexedDB, Drivers.LocalStorage]
     })
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, DadosConsultaService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

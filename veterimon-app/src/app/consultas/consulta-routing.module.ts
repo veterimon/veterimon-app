@@ -6,7 +6,11 @@ const routes: Routes = [
   {
     path: '',
     component: ConsultaPage,
+  },  {
+    path: 'agendar-consulta',
+    loadChildren: () => import('./agendar-consulta/agendar-consulta.module').then( m => m.AgendarConsultaPageModule)
   }
+
 ];
 
 @NgModule({
