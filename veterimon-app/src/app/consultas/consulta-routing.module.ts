@@ -6,9 +6,14 @@ const routes: Routes = [
   {
     path: '',
     component: ConsultaPage,
-  },  {
+  },
+  {
     path: 'agendar-consulta',
     loadChildren: () => import('./agendar-consulta/agendar-consulta.module').then( m => m.AgendarConsultaPageModule)
+  },
+  {
+    path: 'historico-consulta',
+    loadChildren: () => import('./historico-consulta/historico-consulta.module').then( m => m.HistoricoConsultaPageModule)
   }
 
 ];
