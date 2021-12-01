@@ -40,6 +40,10 @@ const routes: Routes = [
     path: 'agendar-consulta',
     loadChildren: () => import('./consultas/agendar-consulta/agendar-consulta.module').then( m => m.AgendarConsultaPageModule)
   },
+  {
+    path: 'historico-consulta',
+    loadChildren: () => import('./consultas/historico-consulta/historico-consulta.module').then( m => m.HistoricoConsultaPageModule)
+  },
 
 
 
