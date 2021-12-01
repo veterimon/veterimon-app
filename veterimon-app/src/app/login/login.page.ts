@@ -23,10 +23,9 @@ export class LoginPage implements OnInit {
       if(res.user.uid){
         this.fireService.getDetails({uid:res.user.uid}).subscribe(res=>{
           console.log(res);
-          alert('Welcome '+ res['name']);
+          alert('Seja Bem-Vindo(a) '+ res['name']);
           this.router.navigate(['/tabs'])
         },err=>{
-          console.log(err, 'testeERRO');
         });
       }
     },err=>{
@@ -34,7 +33,6 @@ export class LoginPage implements OnInit {
       console.log(err);
     })
   }
-
 
   signup(){
     this.router.navigateByUrl('signup');
