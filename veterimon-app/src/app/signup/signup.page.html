@@ -2,17 +2,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');
 </style>
 
-
-<ion-header>
-  <ion-toolbar>
-    <ion-title></ion-title>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
-
 <ion-content>
 
   <ion-slide>
@@ -36,7 +25,7 @@
                 </ion-item>
                 <ion-item>
                   <ion-label position="stacked">Senha</ion-label>
-                  <ion-input [(ngModel)]='password'></ion-input>
+                  <ion-input type="password" [(ngModel)]='password'></ion-input>
                 </ion-item>
                 <ion-button (click)='signup()' shape="round"  expand='block'>Salvar</ion-button>
                 <ion-button (click)='voltar()' shape="round"  expand='block'>Voltar</ion-button>

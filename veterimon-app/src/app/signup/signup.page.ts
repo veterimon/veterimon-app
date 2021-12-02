@@ -43,7 +43,7 @@ export class SignupPage implements OnInit {
   }
 
   voltar() {
-    this.router.navigate(['login'])
+    this.router.navigate(['/login'])
   }
 
 }

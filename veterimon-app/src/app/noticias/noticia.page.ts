@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 import { ModalComponent } from '../componentes/modal/modal.component';
 
@@ -9,7 +10,13 @@ import { ModalComponent } from '../componentes/modal/modal.component';
 })
 export class NoticiaPage {
 
-  constructor(public modalController: ModalController) {}
+  constructor(public modalController: ModalController, public router:Router) {}
+
+  logout() {
+    //this.router.navigate(['/login'])
+    this.router.navigate(['/login']) 
+    window.location.replace('/login')
+  }
 
   }
 
