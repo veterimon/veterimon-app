@@ -17,7 +17,7 @@ const routes: Routes = [
       },
       {
         path: 'mapa',
-        loadChildren: () => import('../mapas/mapa/mapa.module').then(m => m.MapaPageModule)
+        loadChildren: () => import('../mapas/mapa.module').then(m => m.MapaPageModule)
       },
       {
         path: 'perfil',
