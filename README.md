@@ -28,6 +28,8 @@ npm install -g @ionic/cli
 
 npm install
 ```
+Comando caso o Angular de problema 
+npm i @ionic/angular-toolkit@latest
 
 Entre no servidor.
 
