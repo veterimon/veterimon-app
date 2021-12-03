@@ -1,0 +1,28 @@
+{
+  "duvidas": [
+    {
+      "id": 1,
+      "name": "Leonardo",
+      "email": "leonardo@gmail.com",
+      "duvida": "Não sei como cuidar do meu pokémon"
+    },
+    {
+      "id": 2,
+      "name": "Carlos",
+      "email": "carlos@gmail.com",
+      "duvida": "Não sei como alimentar meu pokémon"
+    },
+    {
+      "id": 3,
+      "name": "Paloma",
+      "email": "paloma@gmail.com",
+      "duvida": "Como consigo adotar um pokémon"
+    },
+    {
+      "name": "Leo",
+      "email": "leo@gmail.com",
+      "duvida": "Teste",
+      "id": 4
+    }
+  ]
+}

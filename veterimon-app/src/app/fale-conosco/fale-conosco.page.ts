@@ -21,7 +21,6 @@ export class FaleConoscoPage  {
       header: 'Mensagem enviada com sucesso!',
       message: 'Aguarde até 24h que responderemos sua mensagem!',
       buttons: ['OK']
-      
     });
 
 

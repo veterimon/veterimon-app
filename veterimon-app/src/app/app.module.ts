@@ -8,9 +8,10 @@ import { AppComponent } from './app.component';
 import { ModalComponent } from './componentes/modal/modal.component';
 import { IonicStorageModule } from '@ionic/storage-angular';
 import { Drivers } from '@ionic/storage';
-import { AngularFireModule} from '@angular/fire/compat'
+import { AngularFireModule} from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
 import { DadosConsultaService } from './services/dados-consulta.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,10 +21,11 @@ import { DadosConsultaService } from './services/dados-consulta.service';
   entryComponents: [],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
-    BrowserModule, 
-    IonicModule.forRoot(), 
-    AppRoutingModule, 
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     IonicStorageModule.forRoot({
       driverOrder: [Drivers.IndexedDB, Drivers.LocalStorage]
