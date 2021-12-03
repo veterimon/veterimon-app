@@ -34,7 +34,10 @@ npm i @ionic/angular-toolkit@latest
 Comandos para instalar as dependencias do maps: 
 npm install cordova-plugin-geolocation
 npm install @ionic-native/geolocation
-ionic cap sync
+
+ionic integrations disable capacitor
+ 
+ionic cordova platform add browser
 
 Entre no servidor.
 
