@@ -1,4 +1,0 @@
-com/VET/BuildConfig.java
- com.VET.BuildConfig
-com/VET/MainActivity.java
- com.VET.MainActivity

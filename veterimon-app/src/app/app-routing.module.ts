@@ -43,7 +43,11 @@ const routes: Routes = [
   {
     path: 'historico-consulta',
     loadChildren: () => import('./consultas/historico-consulta/historico-consulta.module').then( m => m.HistoricoConsultaPageModule)
+  },  {
+    path: 'mapa',
+    loadChildren: () => import('./mapas/mapa/mapa.module').then( m => m.MapaPageModule)
   },
+
 
 
 
