@@ -19,4 +19,14 @@ export class NoticiaService {
   create(noticia: Noticia): Observable<Noticia> {
     return this.http.post<Noticia>(this.baseUrl, noticia)
   }
+  
+  readById(id: String): Observable<Noticia>{
+    const url = `${this.baseUrl}/${id}`
+    return this.http.get<Noticia>(url)
+  }
+
+  update(noticia: Noticia): Observable<Noticia>{
+    const url = `${this.baseUrl}/${noticia.id}`
+    return this.http.put<Noticia>(url, noticia)
+  }
 }
