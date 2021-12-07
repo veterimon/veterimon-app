@@ -2,10 +2,21 @@ ion-header {
   font-family: 'Lexend', sans-serif;
 }
 
-ion-card {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
+ion-card-header {
+  font-family: 'Lexend', sans-serif;
+}
+
+h1 {
+  font-family: 'Lexend', sans-serif;
+}
+
+ion-text {
+  font-family: 'Lexend', sans-serif;
+}
+
+ion-button {
+  font-family: 'Lexend', sans-serif;
+}
   
   ion-label {
     margin: 0;
@@ -26,7 +37,15 @@ ion-card {
   font-weight: lighter;
 }
 
+
 h3 {
-  font-weight: lighter;
-  font-size: small;
+  font-family: 'Lexend', sans-serif;
+}
+
+ul {
+  line-height:180%;
+}
+
+li {
+  font-family: 'Lexend', sans-serif;
 }

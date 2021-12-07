@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Fórum</ion-title>
+    <ion-title>Veterimon</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -42,30 +42,48 @@
     @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');
   </style>
 
-  <ion-content>
-    <ion-card-content>
-      <ion-grid>
-        <ion-row>
-          <ion-col col-6>
-            <ion-button *ngIf="this.noticias != null" routerLink="/tabs/noticia/nova-duvida" type="submit" shape="round"
-              type="submit" expand="block">Nova duvida</ion-button>
-          </ion-col>
-          <ion-col col-6>
-            <ion-button *ngIf="this.noticias != null" routerLink="/tabs/noticia/atualizar" type="submit" shape="round"
-              type="submit" expand="block">Editar duvida</ion-button>
-          </ion-col>
-          <ion-col col-6>
-            <ion-label>Digitar ID da Duvida</ion-label>
-            <ion-input type="id" required [(ngModel)]="this.noticia.id" name="id"></ion-input>
-          </ion-col>
-          <ion-col col-6>
-            <ion-button (click)="deleteProduct()" type="submit" shape="round" type="submit" expand="block">Deletar Duvida
-            </ion-button>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+<ion-content>
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-6>
+              <ion-text>No fórum de discussão da Clinica Veterimon, você pode tirar dúvidas sobre exames, descobrir
+                dicas e compartilhar sua experiência com Pokémon com outros tutores.
+                <br>
+                <br>
+                Antes de tudo, para participar, basta lembrar algumas regras de ouro para fóruns on-line. 
+                <br>
+                <br>
+                Em outras palavras, seja respeitoso, ativo, útil, forneça valor e acima de tudo, nada de spam!</ion-text>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
 
-      <!-- <ion-grid>
+
+      <ion-content>
+        <ion-card-content>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-6>
+                <ion-button fill="outline" *ngIf="this.noticias != null" routerLink="/tabs/noticia/nova-duvida"
+                  type="submit" expand="block">Nova dúvida</ion-button>
+              </ion-col>
+              <ion-col col-6>
+                <ion-button fill="outline" *ngIf="this.noticias != null" routerLink="/tabs/noticia/atualizar"
+                  type="submit" expand="block">Editar dúvida</ion-button>
+              </ion-col>
+              <ion-col col-6>
+                <ion-label>Digite o ID</ion-label>
+                <ion-input type="id" required [(ngModel)]="this.noticia.id" name="id"></ion-input>
+                <ion-button (click)="deleteProduct()" fill="outline" size="medium" type="submit" expand="block">Deletar
+                </ion-button>
+              </ion-col>
+
+            </ion-row>
+          </ion-grid>
+
+          <!-- <ion-grid>
             <ion-row>   
               <ion-col col-6>
                 <ion-label >Digitar</ion-label>
@@ -77,20 +95,24 @@
             </ion-row>            
           </ion-grid> -->
 
-      <h6>Todos os comentários</h6>
-      <ul>
-        <li *ngFor="let noticia of noticias">
-          id-> {{ noticia.id }}<br />
-          nome-> {{ noticia.name }}<br />
-          email-> {{ noticia.email }}<br />
-          duvida-> {{ noticia.duvida }}<br />
-          <br />
-          <br />
-        </li>
-      </ul>
-
-    </ion-card-content>
-  </ion-content>
 
 
-</ion-content>
+
+          <h3>Todos os comentários</h3>
+          <ul>
+            <h4>
+              <li *ngFor="let noticia of noticias">
+                ID: {{ noticia.id }}<br />
+                Nome: {{ noticia.name }}<br />
+                E-mail: {{ noticia.email }}<br />
+                Dúvida: {{ noticia.duvida }}<br />
+                <br />
+                <br />
+              </li>
+            </h4>
+          </ul>
+        </ion-card-content>
+      </ion-content>
+
+
+    </ion-content>
