@@ -3,6 +3,7 @@
 </style>
 
 
+
 <ion-header>
   <ion-toolbar>
     <ion-title>Editar</ion-title>
@@ -11,7 +12,7 @@
 
 <div class="content">
   <ion-item>
-    <h5>Digite o ID do comentário que quer editar</h5>
+    <ion-label position="floating">Digite o ID do comentário que quer editar</ion-label>
     <ion-input [(ngModel)]="noticia.id" name="id" type="number" required></ion-input>
   </ion-item>
   <ion-item>
@@ -32,15 +33,16 @@
   <ion-grid>
     <ion-row>
       <ion-col col-6>
-        <ion-button (click)="updateProduct()" type="submit" shape="round" color="danger" type="submit"
-        expand="block">Editar</ion-button>
+        <ion-button (click)="updateProduct()" full expand='block' type="submit" shape="round" color="danger"
+          type="submit">
+          Atualizar
+        </ion-button>
       </ion-col>
       <ion-col col-6>
-        <ion-button routerLink="/tabs/noticia"  full expand='block' type="submit" shape="round" type="submit">
-          Voltar
+        <ion-button routerLink="/tabs/noticia" full expand='block' type="submit" shape="round" color="danger"
+          type="submit">Voltar
         </ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
 </div>
-
