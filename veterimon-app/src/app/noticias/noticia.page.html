@@ -63,7 +63,29 @@
 
           <ion-button (click)="createProduct()" type="submit" shape="round" color="danger" type="submit" [disabled]="form.invalid"
             expand="block">Enviar</ion-button>
+
         </form>
+
+        <!--<ion-button type="submit" shape="round" color="danger" type="submit"
+            expand="block">Buscar</ion-button>-->
+
+            <h6>Todos os comentários</h6>
+            <ul>
+              <li *ngFor="let noticia of noticias">
+                id-> {{ noticia.id }}<br/>
+                nome-> {{ noticia.name }}<br/>
+                email-> {{ noticia.email }}<br/>
+                duvida-> {{ noticia.duvida }}<br/>
+                <br/>
+                <br/>
+              </li>
+            </ul>
+
+            <ion-button routerLink="/tabs/noticia/atualizar" type="submit" shape="round" color="danger" type="submit"
+            expand="block">Para atualizar algum comentário</ion-button>
+                <br/>
+                <br/>
+
       </ion-card-content>
     </ion-content>
 

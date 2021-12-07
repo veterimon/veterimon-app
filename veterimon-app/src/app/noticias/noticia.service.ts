@@ -8,9 +8,11 @@ import { Noticia } from './interfaceNoticia/noticia.model';
 })
 export class NoticiaService {
 
-  baseUrl = "http://localhost:3001/duvidas"
+  baseUrl = "http://localhost:3001/duvidas";
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+
+   }
 
   showMessage(msg: string): void {
     console.log(msg);
@@ -19,10 +21,14 @@ export class NoticiaService {
   create(noticia: Noticia): Observable<Noticia> {
     return this.http.post<Noticia>(this.baseUrl, noticia)
   }
-  
-  readById(id: String): Observable<Noticia>{
+
+  read(): Observable<Noticia[]> {
+    return this.http.get<Noticia[]>(this.baseUrl)
+  }
+
+  readById(id: Number): Observable<Noticia>{
     const url = `${this.baseUrl}/${id}`
-    return this.http.get<Noticia>(url)
+    return this.http.get<Noticia>(this.baseUrl)
   }
 
   update(noticia: Noticia): Observable<Noticia>{
