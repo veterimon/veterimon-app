@@ -38,56 +38,59 @@
     </ion-toolbar>
   </ion-header>
 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');
-    </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');
+  </style>
 
-    <ion-content>
-      <ion-card-content>
-        <form #form="ngForm" (ngSubmit)="(form)">
-          <ion-item>
-            <ion-label position="floating">Nome</ion-label>
-            <ion-input type="name" required [(ngModel)]="noticia.name" name="name"></ion-input>
-          </ion-item>
+  <ion-content>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-6>
+            <ion-button *ngIf="this.noticias != null" routerLink="/tabs/noticia/nova-duvida" type="submit" shape="round"
+              type="submit" expand="block">Nova duvida</ion-button>
+          </ion-col>
+          <ion-col col-6>
+            <ion-button *ngIf="this.noticias != null" routerLink="/tabs/noticia/atualizar" type="submit" shape="round"
+              type="submit" expand="block">Editar duvida</ion-button>
+          </ion-col>
+          <ion-col col-6>
+            <ion-label>Digitar ID da Duvida</ion-label>
+            <ion-input type="id" required [(ngModel)]="this.noticia.id" name="id"></ion-input>
+          </ion-col>
+          <ion-col col-6>
+            <ion-button (click)="deleteProduct()" type="submit" shape="round" type="submit" expand="block">Deletar Duvida
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 
-          <ion-item>
-            <ion-label position="floating">E-mail</ion-label>
-            <ion-input type="email" required [(ngModel)]="noticia.email" name="email"></ion-input>
-          </ion-item>
+      <!-- <ion-grid>
+            <ion-row>   
+              <ion-col col-6>
+                <ion-label >Digitar</ion-label>
+                <ion-input ></ion-input> 
+              </ion-col> 
+              <ion-col col-6>
+                <ion-button >Buscar</ion-button>
+              </ion-col>
+            </ion-row>            
+          </ion-grid> -->
 
-          <ion-item>
-            <ion-label position="floating">Deixei aqui sua dúvida!</ion-label>
-            <ion-input type="text" required [(ngModel)]="noticia.duvida" name="duvida"></ion-input>
-            <ion-textarea rows="3" cols="10" placeholder="" ></ion-textarea>
-          </ion-item>
+      <h6>Todos os comentários</h6>
+      <ul>
+        <li *ngFor="let noticia of noticias">
+          id-> {{ noticia.id }}<br />
+          nome-> {{ noticia.name }}<br />
+          email-> {{ noticia.email }}<br />
+          duvida-> {{ noticia.duvida }}<br />
+          <br />
+          <br />
+        </li>
+      </ul>
 
-          <ion-button (click)="createProduct()" type="submit" shape="round" color="danger" type="submit" [disabled]="form.invalid"
-            expand="block">Enviar</ion-button>
-
-        </form>
-
-        <!--<ion-button type="submit" shape="round" color="danger" type="submit"
-            expand="block">Buscar</ion-button>-->
-
-            <h6 *ngIf="this.noticias != null">Todos os comentários</h6>
-            <ul>
-              <li *ngFor="let noticia of noticias">
-                id-> {{ noticia.id }}<br/>
-                nome-> {{ noticia.name }}<br/>
-                email-> {{ noticia.email }}<br/>
-                duvida-> {{ noticia.duvida }}<br/>
-                <br/>
-                <br/>
-              </li>
-            </ul>
-
-            <ion-button *ngIf="this.noticias != null" routerLink="/tabs/noticia/atualizar" type="submit" shape="round" color="danger" type="submit"
-            expand="block">Para atualizar algum comentário</ion-button>
-                <br/>
-                <br/>
-
-      </ion-card-content>
-    </ion-content>
+    </ion-card-content>
+  </ion-content>
 
 
 </ion-content>

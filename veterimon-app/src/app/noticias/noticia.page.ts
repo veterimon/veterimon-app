@@ -44,4 +44,11 @@ export class NoticiaPage implements OnInit {
       })
     }
 
+    deleteProduct(): void {
+      this.noticiaService.delete(this.noticia).subscribe(() => {
+        this.noticiaService.showMessage('Operação realizada com sucesso');
+        window.location.reload()
+      })
+    }
+
   }
