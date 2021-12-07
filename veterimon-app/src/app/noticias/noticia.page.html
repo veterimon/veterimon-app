@@ -69,7 +69,7 @@
         <!--<ion-button type="submit" shape="round" color="danger" type="submit"
             expand="block">Buscar</ion-button>-->
 
-            <h6>Todos os comentários</h6>
+            <h6 *ngIf="this.noticias != null">Todos os comentários</h6>
             <ul>
               <li *ngFor="let noticia of noticias">
                 id-> {{ noticia.id }}<br/>
@@ -81,7 +81,7 @@
               </li>
             </ul>
 
-            <ion-button routerLink="/tabs/noticia/atualizar" type="submit" shape="round" color="danger" type="submit"
+            <ion-button *ngIf="this.noticias != null" routerLink="/tabs/noticia/atualizar" type="submit" shape="round" color="danger" type="submit"
             expand="block">Para atualizar algum comentário</ion-button>
                 <br/>
                 <br/>
