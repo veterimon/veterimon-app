@@ -1,33 +1,46 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');
+</style>
+
+
+
 <ion-header>
   <ion-toolbar>
     <ion-title>Nova Duvida</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-item>
-  <ion-label position="floating">Nome</ion-label>
-  <ion-input type="name" required [(ngModel)]="noticia.name" name="name"></ion-input>
-</ion-item>
-
-<ion-item>
-  <ion-label position="floating">E-mail</ion-label>
-  <ion-input type="email" required [(ngModel)]="noticia.email" name="email"></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label position="floating">Deixei aqui sua dúvida!</ion-label>
-  <ion-input type="text" required [(ngModel)]="noticia.duvida" name="duvida"></ion-input>
-  <ion-textarea rows="3" cols="10" placeholder="" ></ion-textarea>
-</ion-item>
 
 
-<ion-grid>
-  <ion-row>   
-    <ion-col col-6>
-      <ion-button (click)="createProduct()" type="submit" shape="round" type="submit"
-expand="block">Criar</ion-button>
-    </ion-col>   
-    <ion-col col-6>
-      <ion-button routerLink="/tabs/noticia" type="submit" shape="round" type="submit"
-expand="block">Voltar</ion-button>
-    </ion-col>
-  </ion-row>
-</ion-grid>
+<div class="content">
+  <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input type="name" required [(ngModel)]="noticia.name" name="name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">E-mail</ion-label>
+    <ion-input type="email" required [(ngModel)]="noticia.email" name="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Deixe aqui sua dúvida!</ion-label>
+    <ion-input type="text" required [(ngModel)]="noticia.duvida" name="duvida"></ion-input>
+    <ion-textarea rows="3" cols="10" placeholder=""></ion-textarea>
+  </ion-item>
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <ion-button (click)="createProduct()" full expand='block' color="success" type="submit" shape="round"
+          type="submit" expand="block">Criar
+        </ion-button>
+      </ion-col>
+      <ion-col col-6>
+        <ion-button routerLink="/tabs/noticia" full expand='block' type="submit" shape="round" type="submit"
+          expand="block">Voltar
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</div>

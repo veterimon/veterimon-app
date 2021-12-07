@@ -1,16 +1,10 @@
 {
   "duvidas": [
     {
-      "id": 2,
-      "name": "Carlos",
-      "email": "carlos@gmail.com",
-      "duvida": "Não sei como alimentar meu pokémon"
-    },
-    {
       "id": 3,
-      "name": "Paloma",
-      "email": "paloma@gmail.com",
-      "duvida": "Como consigo adotar um pokémon"
+      "name": "ashasijijas",
+      "email": "hasjiasjijias",
+      "duvida": "ushuas"
     },
     {
       "name": "Leo",
@@ -19,10 +13,16 @@
       "id": 4
     },
     {
-      "id": 8,
+      "id": 5,
       "name": "paxx",
-      "email": "gatogatogato",
-      "duvida": "gato gato gato"
+      "email": "paxx@gmail.com",
+      "duvida": "Gato bonito"
+    },
+    {
+      "id": 6,
+      "name": "nini",
+      "email": "paxx@gmail.com",
+      "duvida": "gatão"
     }
   ]
 }
