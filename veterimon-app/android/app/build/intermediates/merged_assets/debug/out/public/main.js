@@ -72,6 +72,14 @@ const routes = [
         path: 'pokedex',
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pokedex_pokedex_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pokedex/pokedex.module */ 2006)).then(m => m.PokedexPageModule)
     },
+    {
+        path: 'agendar-consulta',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_consultas_agendar-consulta_agendar-consulta_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./consultas/agendar-consulta/agendar-consulta.module */ 6659)).then(m => m.AgendarConsultaPageModule)
+    },
+    {
+        path: 'historico-consulta',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_consultas_historico-consulta_historico-consulta_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./consultas/historico-consulta/historico-consulta.module */ 5062)).then(m => m.HistoricoConsultaPageModule)
+    },
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -134,19 +142,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! tslib */ 1855);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 2741);
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/platform-browser */ 3220);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/router */ 9535);
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ionic/angular */ 4595);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/forms */ 3324);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! tslib */ 1855);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 2741);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/platform-browser */ 3220);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/router */ 9535);
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @ionic/angular */ 4595);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/forms */ 3324);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 809);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 721);
 /* harmony import */ var _componentes_modal_modal_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./componentes/modal/modal.component */ 9815);
-/* harmony import */ var _ionic_storage_angular__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @ionic/storage-angular */ 2966);
+/* harmony import */ var _ionic_storage_angular__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @ionic/storage-angular */ 2966);
 /* harmony import */ var _ionic_storage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/storage */ 2604);
-/* harmony import */ var _angular_fire_compat__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/fire/compat */ 9106);
+/* harmony import */ var _angular_fire_compat__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/fire/compat */ 9106);
 /* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/environments/environment */ 4766);
+/* harmony import */ var _services_dados_consulta_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./services/dados-consulta.service */ 3046);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/common/http */ 1887);
+
+
 
 
 
@@ -162,25 +174,26 @@ __webpack_require__.r(__webpack_exports__);
 
 let AppModule = class AppModule {
 };
-AppModule = (0,tslib__WEBPACK_IMPORTED_MODULE_5__.__decorate)([
-    (0,_angular_core__WEBPACK_IMPORTED_MODULE_6__.NgModule)({
+AppModule = (0,tslib__WEBPACK_IMPORTED_MODULE_6__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_7__.NgModule)({
         declarations: [
             _app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent,
             _componentes_modal_modal_component__WEBPACK_IMPORTED_MODULE_2__.ModalComponent
         ],
         entryComponents: [],
         imports: [
-            _angular_fire_compat__WEBPACK_IMPORTED_MODULE_7__.AngularFireModule.initializeApp(src_environments_environment__WEBPACK_IMPORTED_MODULE_4__.environment.firebase),
-            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_8__.BrowserModule,
-            _ionic_angular__WEBPACK_IMPORTED_MODULE_9__.IonicModule.forRoot(),
+            _angular_fire_compat__WEBPACK_IMPORTED_MODULE_8__.AngularFireModule.initializeApp(src_environments_environment__WEBPACK_IMPORTED_MODULE_4__.environment.firebase),
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_9__.BrowserModule,
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_10__.IonicModule.forRoot(),
             _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule,
-            _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormsModule,
-            _angular_forms__WEBPACK_IMPORTED_MODULE_10__.ReactiveFormsModule,
-            _ionic_storage_angular__WEBPACK_IMPORTED_MODULE_11__.IonicStorageModule.forRoot({
+            _angular_forms__WEBPACK_IMPORTED_MODULE_11__.FormsModule,
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_12__.HttpClientModule,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_11__.ReactiveFormsModule,
+            _ionic_storage_angular__WEBPACK_IMPORTED_MODULE_13__.IonicStorageModule.forRoot({
                 driverOrder: [_ionic_storage__WEBPACK_IMPORTED_MODULE_3__.Drivers.IndexedDB, _ionic_storage__WEBPACK_IMPORTED_MODULE_3__.Drivers.LocalStorage]
             })
         ],
-        providers: [{ provide: _angular_router__WEBPACK_IMPORTED_MODULE_12__.RouteReuseStrategy, useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_9__.IonicRouteStrategy }],
+        providers: [{ provide: _angular_router__WEBPACK_IMPORTED_MODULE_14__.RouteReuseStrategy, useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_10__.IonicRouteStrategy }, _services_dados_consulta_service__WEBPACK_IMPORTED_MODULE_5__.DadosConsultaService],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent],
     })
 ], AppModule);
@@ -245,6 +258,54 @@ ModalComponent = (0,tslib__WEBPACK_IMPORTED_MODULE_4__.__decorate)([
         styles: [_modal_component_scss__WEBPACK_IMPORTED_MODULE_1__.default]
     })
 ], ModalComponent);
+
+
+
+/***/ }),
+
+/***/ 3046:
+/*!****************************************************!*\
+  !*** ./src/app/services/dados-consulta.service.ts ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DadosConsultaService": () => (/* binding */ DadosConsultaService)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tslib */ 1855);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 2741);
+/* harmony import */ var _ionic_storage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ionic/storage */ 2604);
+
+
+
+let DadosConsultaService = class DadosConsultaService {
+    constructor(storage) {
+        this.consultas = [];
+        this.storage = storage;
+        this.storage.create().then(() => console.log('Armazenamento criado'));
+        this.storage.get('consultas')
+            .then(consultas => this.consultas.push(...consultas))
+            .catch(() => this.storage.set('consultas', this.consultas));
+    }
+    buscarConsulta() {
+        return this.consultas;
+    }
+    salvarConsulta(consulta) {
+        consulta.id = this.consultas.length + 1;
+        this.consultas.push(consulta);
+        this.storage.set('consultas', this.consultas);
+    }
+};
+DadosConsultaService.ctorParameters = () => [
+    { type: _ionic_storage__WEBPACK_IMPORTED_MODULE_0__.Storage }
+];
+DadosConsultaService = (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.Injectable)({
+        providedIn: 'root'
+    })
+], DadosConsultaService);
 
 
 

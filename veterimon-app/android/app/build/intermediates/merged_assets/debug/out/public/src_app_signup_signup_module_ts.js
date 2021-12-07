@@ -121,7 +121,7 @@ let SignupPage = class SignupPage {
                     uid: res.user.uid
                 };
                 this.fireService.saveDetails(data).then(res => {
-                    alert('Account Created!');
+                    alert('Conta criada com sucesso!');
                     this.router.navigate(['/login']);
                 }, err => {
                     console.log(err);
@@ -131,6 +131,9 @@ let SignupPage = class SignupPage {
             alert(err.message);
             console.log(err);
         });
+    }
+    voltar() {
+        this.router.navigate(['/login']);
     }
 };
 SignupPage.ctorParameters = () => [
@@ -175,7 +178,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<style>\r\n  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');\r\n</style>\r\n\r\n\r\n<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title></ion-title>\r\n    <ion-buttons slot=\"start\">\r\n      <ion-back-button></ion-back-button>\r\n    </ion-buttons>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n\r\n<ion-content>\r\n\r\n  <ion-slide>\r\n    <div class=\"cont-cad\">\r\n      <ion-grid>\r\n        <ion-row>\r\n          <ion-col>\r\n            <h1>Cadastro</h1>\r\n          </ion-col>\r\n        </ion-row>\r\n        <ion-row>\r\n          <ion-col>\r\n              <div class=\"form\">\r\n                <ion-item>\r\n                  <ion-label position=\"stacked\">Nome</ion-label>\r\n                  <ion-input [(ngModel)]='name'></ion-input>\r\n                </ion-item>\r\n                <ion-item>\r\n                  <ion-label position=\"stacked\">E-mail</ion-label>\r\n                  <ion-input [(ngModel)]='email'></ion-input>\r\n                </ion-item>\r\n                <ion-item>\r\n                  <ion-label position=\"stacked\">Senha</ion-label>\r\n                  <ion-input [(ngModel)]='password'></ion-input>\r\n                </ion-item>\r\n                <ion-button (click)='signup()' shape=\"round\"  expand='block'>Salvar</ion-button>\r\n              </div>\r\n          </ion-col>\r\n        </ion-row>\r\n      </ion-grid>\r\n    </div>\r\n  </ion-slide>\r\n</ion-content>");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<style>\r\n  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');\r\n</style>\r\n\r\n<ion-content>\r\n\r\n  <ion-slide>\r\n    <div class=\"cont-cad\">\r\n      <ion-grid>\r\n        <ion-row>\r\n          <ion-col>\r\n            <h1>Cadastro</h1>\r\n          </ion-col>\r\n        </ion-row>\r\n        <ion-row>\r\n          <ion-col>\r\n              <div class=\"form\">\r\n                <ion-item>\r\n                  <ion-label position=\"stacked\">Nome</ion-label>\r\n                  <ion-input [(ngModel)]='name'></ion-input>\r\n                </ion-item>\r\n                <ion-item>\r\n                  <ion-label position=\"stacked\">E-mail</ion-label>\r\n                  <ion-input [(ngModel)]='email'></ion-input>\r\n                </ion-item>\r\n                <ion-item>\r\n                  <ion-label position=\"stacked\">Senha</ion-label>\r\n                  <ion-input type=\"password\" [(ngModel)]='password'></ion-input>\r\n                </ion-item>\r\n                <ion-button (click)='signup()' shape=\"round\"  expand='block'>Salvar</ion-button>\r\n                <ion-button (click)='voltar()' shape=\"round\"  expand='block'>Voltar</ion-button>\r\n              </div>\r\n          </ion-col>\r\n        </ion-row>\r\n      </ion-grid>\r\n    </div>\r\n  </ion-slide>\r\n</ion-content>");
 
 /***/ })
 

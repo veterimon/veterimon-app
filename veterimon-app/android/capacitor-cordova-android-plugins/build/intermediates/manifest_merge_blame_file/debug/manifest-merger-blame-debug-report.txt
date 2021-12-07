@@ -5,12 +5,12 @@
 5
 6    <uses-sdk
 7        android:minSdkVersion="21"
-7-->E:\vetapp\veterimon\veterimon-app\veterimon-app\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+7-->E:\vetapp\veterimon-app\veterimon-app\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
 8        android:targetSdkVersion="30" />
-8-->E:\vetapp\veterimon\veterimon-app\veterimon-app\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+8-->E:\vetapp\veterimon-app\veterimon-app\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
 9
 10    <application>
-10-->E:\vetapp\veterimon\veterimon-app\veterimon-app\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:5:1-7:15
+10-->E:\vetapp\veterimon-app\veterimon-app\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:5:1-7:15
 11    </application>
 12
 13</manifest>

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\vetapp\\veterimon\\veterimon-app\\veterimon-app\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ms\\values-ms.xml",
+            "outputFile": "E:\\vetapp\\veterimon-app\\veterimon-app\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ms\\values-ms.xml",
             "map": [
                 {
                     "source": "C:\\Users\\sothi\\.gradle\\caches\\transforms-3\\2affdb6e6a1314389bbf6c67f425b6c6\\transformed\\core-1.3.2\\res\\values-ms\\values-ms.xml",
