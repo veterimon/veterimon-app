@@ -28,16 +28,23 @@ npm install -g @ionic/cli
 
 npm install
 ```
-Comando caso o Angular de problema:
+Comando caso o Angular dê algum problema:
+
+```bash
+
 npm i @ionic/angular-toolkit@latest
+```
 
 Comandos para instalar as dependencias do maps: 
+
+```bash
 npm install cordova-plugin-geolocation
 npm install @ionic-native/geolocation
 
 ionic integrations disable capacitor
- 
 ionic cordova platform add browser
+
+```
 
 Entre no servidor.
 
