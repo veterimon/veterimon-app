@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'atualizar',
     loadChildren: () => import('./atualizar/atualizar/atualizar.module').then( m => m.AtualizarPageModule)
+  },
+  {
+    path: 'nova-duvida',
+    loadChildren: () => import('./nova-duvida/nova-duvida.module').then( m => m.NovaPageModule)
   }
 
 ];

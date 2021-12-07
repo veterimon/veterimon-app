@@ -1,12 +1,6 @@
 {
   "duvidas": [
     {
-      "id": 1,
-      "name": "Leonardo",
-      "email": "leonardo@gmail.com",
-      "duvida": "Não sei como cuidar do meu pokémon"
-    },
-    {
       "id": 2,
       "name": "Carlos",
       "email": "carlos@gmail.com",
@@ -23,6 +17,12 @@
       "email": "leo@gmail.com",
       "duvida": "Teste",
       "id": 4
+    },
+    {
+      "id": 8,
+      "name": "paxx",
+      "email": "gatogatogato",
+      "duvida": "gato gato gato"
     }
   ]
 }

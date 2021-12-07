@@ -35,4 +35,9 @@ export class NoticiaService {
     const url = `${this.baseUrl}/${noticia.id}`
     return this.http.put<Noticia>(url, noticia)
   }
+
+  delete(noticia: Noticia): Observable<Noticia>{
+    const url = `${this.baseUrl}/${noticia.id}`
+    return this.http.delete<Noticia>(url)
+  }
 }
