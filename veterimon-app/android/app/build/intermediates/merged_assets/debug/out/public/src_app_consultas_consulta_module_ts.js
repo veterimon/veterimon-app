@@ -23,6 +23,14 @@ const routes = [
     {
         path: '',
         component: _consulta_page__WEBPACK_IMPORTED_MODULE_0__.ConsultaPage,
+    },
+    {
+        path: 'agendar-consulta',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_consultas_agendar-consulta_agendar-consulta_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./agendar-consulta/agendar-consulta.module */ 6659)).then(m => m.AgendarConsultaPageModule)
+    },
+    {
+        path: 'historico-consulta',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_consultas_historico-consulta_historico-consulta_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./historico-consulta/historico-consulta.module */ 5062)).then(m => m.HistoricoConsultaPageModule)
     }
 ];
 let ConsultaPageRoutingModule = class ConsultaPageRoutingModule {
@@ -144,7 +152,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjb25zdWx0YS5wYWdlLnNjc3MifQ== */");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("ion-toolbar {\n  font-family: \"Lexend\", sans-serif;\n}\n\nion-card {\n  font-family: \"Lexend\", sans-serif;\n}\n\nion-button {\n  font-family: \"Lexend\", sans-serif;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnN1bHRhLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGlDQUFBO0FBQ0o7O0FBRUE7RUFDSSxpQ0FBQTtBQUNKOztBQUVBO0VBQ0ksaUNBQUE7QUFDSiIsImZpbGUiOiJjb25zdWx0YS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpb24tdG9vbGJhciB7XHJcbiAgICBmb250LWZhbWlseTogJ0xleGVuZCcsIHNhbnMtc2VyaWY7XHJcbn1cclxuXHJcbmlvbi1jYXJkIHtcclxuICAgIGZvbnQtZmFtaWx5OiAnTGV4ZW5kJywgc2Fucy1zZXJpZjtcclxufVxyXG5cclxuaW9uLWJ1dHRvbiB7XHJcbiAgICBmb250LWZhbWlseTogJ0xleGVuZCcsIHNhbnMtc2VyaWY7XHJcbn1cclxuIl19 */");
 
 /***/ }),
 
@@ -159,7 +167,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<ion-content [fullscreen]=\"true\">\r\n  <ion-toolbar>\r\n    <ion-title>Consultas</ion-title>\r\n  </ion-toolbar>\r\n\r\n\r\n  <div style=\"display: flex;\" class=\"ion-justify-content-center\">\r\n\r\n  </div>\r\n\r\n      <ion-card>\r\n        <ion-card-content>\r\n          <ion-button (click)=\"chamarModal()\" expand=\"block\" fill=\"outline\">Agendar nova consulta</ion-button>\r\n          <br>\r\n          <div style=\"display: flex;\" class=\"ion-justify-content-center\">\r\n            <ion-text color=\"dark\">\r\n              <h2 style=\"text-align: center\">Consulte profissionais, dias e horários disponíveis.</h2>\r\n            </ion-text>\r\n          </div>\r\n        </ion-card-content>\r\n      </ion-card>\r\n\r\n      <ion-card>\r\n        <ion-card-content>\r\n          <ion-button expand=\"block\" fill=\"outline\">Histórico de consultas</ion-button>\r\n          <br>\r\n          <div style=\"display: flex;\" class=\"ion-justify-content-center\">\r\n            <ion-text color=\"dark\">\r\n              <h2 style=\"text-align: center\">Veja as consultas passadas que seu Pokémon já teve.</h2>\r\n            </ion-text>\r\n          </div>\r\n        </ion-card-content>\r\n      </ion-card>\r\n\r\n\r\n");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<ion-content [fullscreen]=\"true\">\r\n  <ion-toolbar>\r\n    <ion-title>Veterimon</ion-title>\r\n  </ion-toolbar>\r\n\r\n  <style>\r\n    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');\r\n  </style>\r\n  \r\n\r\n  <div style=\"display: flex;\" class=\"ion-justify-content-center\">\r\n\r\n  </div>\r\n\r\n      <ion-card>\r\n        <ion-card-content>\r\n          <ion-button routerLink=\"/agendar-consulta\" expand=\"block\" fill=\"outline\">Agendar nova consulta</ion-button>\r\n          <br>\r\n          <div style=\"display: flex;\" class=\"ion-justify-content-center\">\r\n            <ion-text color=\"dark\">\r\n              <h2 style=\"text-align: center\">Consulte profissionais, dias e horários disponíveis.</h2>\r\n            </ion-text>\r\n          </div>\r\n        </ion-card-content>\r\n      </ion-card>\r\n\r\n      <ion-card>\r\n        <ion-card-content>\r\n          <ion-button routerLink=\"/historico-consulta\" expand=\"block\" fill=\"outline\">Histórico de consultas</ion-button>\r\n          <br>\r\n          <div style=\"display: flex;\" class=\"ion-justify-content-center\">\r\n            <ion-text color=\"dark\">\r\n              <h2 style=\"text-align: center\">Veja as consultas passadas que seu Pokémon já teve.</h2>\r\n            </ion-text>\r\n          </div>\r\n        </ion-card-content>\r\n      </ion-card>\r\n\r\n\r\n");
 
 /***/ })
 

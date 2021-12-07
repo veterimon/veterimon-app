@@ -117,10 +117,9 @@ let LoginPage = class LoginPage {
             if (res.user.uid) {
                 this.fireService.getDetails({ uid: res.user.uid }).subscribe(res => {
                     console.log(res);
-                    alert('Welcome ' + res['name']);
+                    alert('Seja Bem-Vindo(a) ' + res['name']);
                     this.router.navigate(['/tabs']);
                 }, err => {
-                    console.log(err, 'testeERRO');
                 });
             }
         }, err => {
@@ -129,7 +128,7 @@ let LoginPage = class LoginPage {
         });
     }
     signup() {
-        this.router.navigateByUrl('signup');
+        this.router.navigateByUrl('/signup');
     }
 };
 LoginPage.ctorParameters = () => [
@@ -174,7 +173,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<style>\r\n  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');\r\n</style>\r\n\r\n<ion-content>\r\n  \r\n\r\n  <ion-slide>\r\n    <div class=\"cont-login\">\r\n      <ion-grid>\r\n        <img class=\"logo-img\" src=\"assets/logo/work4.png\">\r\n        <h1 class=\"vet\">Veterimon</h1>\r\n        <ion-row>\r\n          <ion-col>\r\n            <h2>Login</h2>\r\n          </ion-col>\r\n        </ion-row>\r\n        <ion-row>\r\n          <ion-col>\r\n            <ion-list>\r\n              <ion-item>\r\n                <ion-label position=\"stacked\">E-mail</ion-label>\r\n                <ion-input [(ngModel)]='email'></ion-input>\r\n              </ion-item>\r\n              <br>\r\n\r\n              <ion-item>\r\n                <ion-label position=\"stacked\">Senha</ion-label>\r\n                <ion-input [(ngModel)]='password'></ion-input>\r\n              </ion-item>\r\n\r\n              \r\n            </ion-list>\r\n            <ion-button (click)='login()' shape=\"round\" expand='block'>Entrar</ion-button>\r\n              <br>\r\n          </ion-col>\r\n        </ion-row>\r\n        <ion-row>\r\n\r\n        </ion-row>\r\n        <ion-row>\r\n          <ion-col>\r\n            <ion-label>\r\n              <h3 (click)='signup()'>Não tem uma conta?\r\n                <br>\r\n                <ion-text color='primary'>Registre-se aqui</ion-text>\r\n              </h3>\r\n            </ion-label>\r\n          </ion-col>\r\n        </ion-row>\r\n      </ion-grid>\r\n    </div>\r\n  </ion-slide>\r\n</ion-content>");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<style>\r\n  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');\r\n</style>\r\n\r\n<ion-content>\r\n\r\n  <ion-slide>\r\n    <div class=\"cont-login\">\r\n      <ion-grid>\r\n        <img class=\"logo-img\" src=\"assets/logo/work4.png\">\r\n        <h1 class=\"vet\">Veterimon</h1>\r\n        <ion-row>\r\n          <ion-col>\r\n            <h2>Login</h2>\r\n          </ion-col>\r\n        </ion-row>\r\n        <ion-row>\r\n          <ion-col>\r\n            <ion-list>\r\n              <ion-item>\r\n                <ion-label position=\"stacked\">E-mail</ion-label>\r\n                <ion-input [(ngModel)]='email'></ion-input>\r\n              </ion-item>\r\n              <br>\r\n\r\n              <ion-item>\r\n                <ion-label position=\"stacked\">Senha</ion-label>\r\n                <ion-input type=\"password\" [(ngModel)]='password'></ion-input>\r\n              </ion-item>\r\n\r\n              \r\n            </ion-list>\r\n            <ion-button (click)='login()' shape=\"round\" expand='block'>Entrar</ion-button>\r\n              <br>\r\n          </ion-col>\r\n        </ion-row>\r\n        <ion-row>\r\n\r\n        </ion-row>\r\n        <ion-row>\r\n          <ion-col>\r\n            <ion-label>\r\n              <h3 (click)='signup()'>Não tem uma conta?\r\n                <br>\r\n                <ion-text color='primary'>Registre-se aqui</ion-text>\r\n              </h3>\r\n            </ion-label>\r\n          </ion-col>\r\n        </ion-row>\r\n      </ion-grid>\r\n    </div>\r\n  </ion-slide>\r\n</ion-content>");
 
 /***/ })
 

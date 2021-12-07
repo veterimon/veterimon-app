@@ -42,35 +42,17 @@
     @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');
   </style>
 
-<ion-content>
-      <ion-card-content>
-        <ion-grid>
-          <ion-row>
-            <ion-col col-6>
-              <ion-text>No fórum de discussão da Clinica Veterimon, você pode tirar dúvidas sobre exames, descobrir
-                dicas e compartilhar sua experiência com Pokémon com outros tutores.
-                <br>
-                <br>
-                Antes de tudo, para participar, basta lembrar algumas regras de ouro para fóruns on-line. 
-                <br>
-                <br>
-                Em outras palavras, seja respeitoso, ativo, útil, forneça valor e acima de tudo, nada de spam!</ion-text>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </ion-card-content>
-
 
       <ion-content>
         <ion-card-content>
           <ion-grid>
             <ion-row>
               <ion-col col-6>
-                <ion-button fill="outline" *ngIf="this.noticias != null" routerLink="/tabs/noticia/nova-duvida"
+                <ion-button fill="outline"  routerLink="/tabs/noticia/nova-duvida"
                   type="submit" expand="block">Nova dúvida</ion-button>
               </ion-col>
               <ion-col col-6>
-                <ion-button fill="outline" *ngIf="this.noticias != null" routerLink="/tabs/noticia/atualizar"
+                <ion-button fill="outline"  routerLink="/tabs/noticia/atualizar"
                   type="submit" expand="block">Editar dúvida</ion-button>
               </ion-col>
               <ion-col col-6>

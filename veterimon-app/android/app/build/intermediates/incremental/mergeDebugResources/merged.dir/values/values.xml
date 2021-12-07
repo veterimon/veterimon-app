@@ -289,16 +289,16 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with <ns1:g example="Mail" id="application_name">%s</ns1:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="app_name">Veterimon</string>
+    <string name="app_name">veterimon-app</string>
     <string name="camera_error">Unable to use camera</string>
-    <string name="custom_url_scheme">com.VET</string>
+    <string name="custom_url_scheme">io.ionic.starter</string>
     <string name="ok">OK</string>
-    <string name="package_name">com.VET</string>
+    <string name="package_name">io.ionic.starter</string>
     <string name="picture">Picture</string>
     <string name="request_permission">Allow this app to take pictures</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <string name="title_activity_main">Veterimon</string>
+    <string name="title_activity_main">veterimon-app</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
