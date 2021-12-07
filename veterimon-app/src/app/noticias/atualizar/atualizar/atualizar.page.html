@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Atualizar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-item>
+  <ion-label position="floating">Digite o ID do comentário que quer atualizar?</ion-label>
+  <ion-input [(ngModel)]="noticia.id" name="id" type="number" required></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Nome</ion-label>
+  <ion-input type="name" required [(ngModel)]="noticia.name" name="name"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">E-mail</ion-label>
+  <ion-input type="email" required [(ngModel)]="noticia.email" name="email"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Deixei aqui sua dúvida!</ion-label>
+  <ion-input type="text" required [(ngModel)]="noticia.duvida" name="duvida"></ion-input>
+  <ion-textarea rows="3" cols="10" placeholder="" ></ion-textarea>
+</ion-item>
+<ion-button (click)="updateProduct()" type="submit" shape="round" color="danger" type="submit"
+expand="block">Atualizar</ion-button>
+<ion-button routerLink="/tabs/noticia" type="submit" shape="round" color="danger" type="submit"
+expand="block">Voltar</ion-button>

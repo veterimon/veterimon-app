@@ -6,7 +6,12 @@ const routes: Routes = [
   {
     path: '',
     component: NoticiaPage,
+  },
+  {
+    path: 'atualizar',
+    loadChildren: () => import('./atualizar/atualizar/atualizar.module').then( m => m.AtualizarPageModule)
   }
+
 ];
 
 @NgModule({

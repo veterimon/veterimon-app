@@ -13,14 +13,21 @@ import { NoticiaService } from './noticia.service';
 export class NoticiaPage implements OnInit {
 
   noticia: Noticia = {
+    id: null,
     name: '',
     email: '',
     duvida: ''
   }
 
+  noticias: Noticia[]
+
   constructor(public modalController: ModalController, public router: Router, private noticiaService: NoticiaService) {}
 
-  ngOnInit(){
+  ngOnInit(): void {
+    this.noticiaService.read().subscribe(noticias => {
+      this.noticias = noticias
+      console.log(noticias)
+    })
 
   }
 
@@ -38,4 +45,3 @@ export class NoticiaPage implements OnInit {
     }
 
   }
-
