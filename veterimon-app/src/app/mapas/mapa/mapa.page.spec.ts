@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
-import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { MapaPage } from './mapa.page';
 
@@ -10,8 +9,8 @@ describe('MapaPage', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [MapaPage],
-      imports: [IonicModule.forRoot(), ExploreContainerComponentModule]
+      declarations: [ MapaPage ],
+      imports: [IonicModule.forRoot()]
     }).compileComponents();
 
     fixture = TestBed.createComponent(MapaPage);
