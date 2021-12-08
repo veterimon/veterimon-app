@@ -40,7 +40,8 @@ Comandos para instalar as dependencias do maps:
 ```bash
 npm install cordova-plugin-geolocation
 npm install @ionic-native/geolocation
-
+npm install @ionic-native/core --save
+npm i -D @types/google.maps
 ionic integrations disable capacitor
 ionic cordova platform add browser
 
